@@ -19,21 +19,70 @@ body{
 #header{
 
     padding: 1%;
-    margin: -1px;
+    top: 0;
+    margin: 0;
     width: 100;
     max-width: 100vw;
-
     height: 95px;
     background-color: #7f7fa6;
 
 }
+
+.button-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    text-align: center;
+    gap: 10px; 
+    padding: 10px;
+    position: relative;
+    width: 100%; 
+    z-index: 10; 
+}
+.button_employer {
+  color: #fff;
+  cursor: pointer;
+  background-color:  rgba(87, 36, 100, 0.926);
+  padding: 12px 24px;
+  border-radius: 16px;
+  border: none;
+  width: 75px;
+  height: 40px;
+  margin-right: 91%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.button_employee{
+  color: #fff;
+  cursor: pointer;
+  background-color:  rgba(87, 36, 100, 0.926);
+  padding: 12px 24px;
+  border-radius: 16px;
+  border: none;
+  width: 75px;
+  height: 40px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+button.button_employer:hover , button.button_employee:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  }
+button.button_employer:active , button.button_employee:active  {
+    transform: scale(0.95); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+/*
 .bell img{
     width: 40px;
     height: 40px;
     margin-right: 97%;
     margin-top: 10px;
     padding-bottom: -10px;
-}
+}*/
 .profile_user img{
     width: 75px;
     height: 75px;
@@ -137,9 +186,9 @@ nav ul li {
     
     text-align: center;
     margin-bottom: 10px;
-    color: #fff
+    color: #fff;
     
-    cursor: pointer;
+    cursor:pointer;
     padding: 4%;
 }
 nav ul li:hover {
@@ -167,63 +216,62 @@ nav ul li:hover {
 
  }
 
-@media screen and (max-width:576px) {
-    body{
+ @media screen and (max-width: 576px) {
+    /* تنظیمات صفحه اصلی */
+    body {
         background-color: rgb(223, 223, 236);
     }
-    #header{
-    
+
+    #header {
         padding: 1%;
-        margin: -9px;
-        width: 1%;
+        margin: 0;
+        width: 100%;
         height: 75px;
         background-color: #7f7fa6;
-    
     }
-    .bell img{
-        width: 30px;
-        height: 30px;
-        margin-right: 530px;
-        margin-top: 15px;
-        padding-bottom: -30px;
+
+    /* اصلاحات برای .button-container */
+    .button-container {
+        display: flex;
+        justify-content: flex-start; /* دکمه‌ها به سمت چپ تراز می‌شوند */
+        align-items: flex-start; /* دکمه‌ها به سمت بالا تراز می‌شوند */
+
+        padding: 10px;
+        width: 100%;
+        margin-right: 75%;
     }
-    .profile_user img{
-        width: 60px;
-        height: 60px;
-        border-radius: 100%;
-        object-fit: contain;
-        margin-right: 460px;
-        margin-top: -60px ;
+
+    .button_employer, .button_employee {
+        width: 10%; /* دکمه‌ها باید به اندازه محتوایشان عرض داشته باشند */
+        max-width: 200px; /* حداکثر عرض دکمه‌ها */
+        margin: 0; /* حذف مارجین اضافی */
+        padding: 10px 15px; /* پدینگ مناسب برای دکمه‌ها */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* سایه دکمه‌ها */
+        text-align: center;
+        
     }
-    .logo img{
-        width: 55px;
-        height: 70px;
-        margin-right: 220px;
-        margin-top: -150px;
-        padding-bottom: 25px;
-        padding-top: -2px;
-        border-top-right-radius: 5%;
-        border-top-left-radius:5%; 
-        border-bottom-right-radius:15% ; 
-        border-bottom-left-radius: 15%;
+
+    /* بهینه‌سازی حالت hover و active */
+    button.button_employer:hover , button.button_employee:hover {
+        background-color: #45a049;
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
     }
-    .align img{
-        width: 38px;
-        height: 60px;
-        margin-right: -1px;
-        margin-top: -150px;
-        margin-bottom: 38px;
-    
+
+    button.button_employer:active , button.button_employee:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
-    /* #wrap{
-        /* display:block; */
-    /* } */ */
+       
     #inputTag {
         display: none;
     }
 
+}
+ 
+ 
  
     /* #inputTag:checked ~ ul {
         transform: translateX(0);
     } */
-}
+
