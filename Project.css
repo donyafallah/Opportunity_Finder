@@ -9,7 +9,7 @@
 }
 @font-face{
     font-family: Shabnam;
-    src: url(recourse/Shabnam-Bold.ttf);
+    src: url(Shabnam-Bold.ttf);
 }
 body{
     background-color: rgb(223, 223, 236);
@@ -30,49 +30,46 @@ body{
 
 .button-container {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;  /* دکمه‌ها را به سمت چپ تراز می‌کند */
     align-items: center;
-    text-align: center;
-    gap: 10px; 
+    gap: 10px;  /* فاصله بین دکمه‌ها */
     padding: 10px;
     position: relative;
     width: 100%; 
     z-index: 10; 
+    margin-right: 91%;
 }
-.button_employer {
-  color: #fff;
-  cursor: pointer;
-  background-color:  rgba(87, 36, 100, 0.926);
-  padding: 12px 24px;
-  border-radius: 16px;
-  border: none;
-  width: 75px;
-  height: 40px;
-  margin-right: 91%;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+.button_employer, .button_employee {
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(87, 36, 100, 0.926);
+    padding: 12px 24px;
+    border-radius: 16px;
+    border: none;
+    width: 75px;
+    height: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-.button_employee{
-  color: #fff;
-  cursor: pointer;
-  background-color:  rgba(87, 36, 100, 0.926);
-  padding: 12px 24px;
-  border-radius: 16px;
-  border: none;
-  width: 75px;
-  height: 40px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-button.button_employer:hover , button.button_employee:hover {
+
+button.button_employer:hover, button.button_employee:hover {
     background-color: #45a049;
     transform: scale(1.05);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-  }
-button.button_employer:active , button.button_employee:active  {
-    transform: scale(0.95); 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
+
+button.button_employer:active, button.button_employee:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* استایل‌های جدید برای تگ <a> */
+a {
+    text-decoration: none;  /* حذف خط زیر لینک */
+    display: block;  /* تغییر به بلوک برای کنترل بهتر */
+}
+
 
 
 /*
@@ -217,7 +214,6 @@ nav ul li:hover {
  }
 
  @media screen and (max-width: 576px) {
-    /* تنظیمات صفحه اصلی */
     body {
         background-color: rgb(223, 223, 236);
     }
@@ -230,28 +226,30 @@ nav ul li:hover {
         background-color: #7f7fa6;
     }
 
-    /* اصلاحات برای .button-container */
     .button-container {
         display: flex;
-        justify-content: flex-start; /* دکمه‌ها به سمت چپ تراز می‌شوند */
-        align-items: flex-start; /* دکمه‌ها به سمت بالا تراز می‌شوند */
-
+        justify-content: flex-start;
         padding: 10px;
         width: 100%;
-        margin-right: 75%;
+        margin-right: 78%;
+        margin-top: 1%;
+        gap: 1px;
     }
 
     .button_employer, .button_employee {
-        width: 10%; /* دکمه‌ها باید به اندازه محتوایشان عرض داشته باشند */
-        max-width: 200px; /* حداکثر عرض دکمه‌ها */
-        margin: 0; /* حذف مارجین اضافی */
-        padding: 10px 15px; /* پدینگ مناسب برای دکمه‌ها */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* سایه دکمه‌ها */
+        width: 55px;
+        height: 30px;
+        padding: 7px 10px;
+        margin: 0; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         text-align: center;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        font-size: small ;
         
     }
 
-    /* بهینه‌سازی حالت hover و active */
     button.button_employer:hover , button.button_employee:hover {
         background-color: #45a049;
         transform: scale(1.05);
