@@ -12,8 +12,10 @@
     src: url(Shabnam-Bold.ttf);
 }
 body{
-    background-color: rgb(223, 223, 236);
+   /* background-color: rgb(223, 223, 236);*/
     overflow-x: hidden;
+    background-color: #cef7f7;
+
    
 }
 #header{
@@ -24,20 +26,21 @@ body{
     width: 100;
     max-width: 100vw;
     height: 95px;
-    background-color: #7f7fa6;
+    position: relative;
+    z-index: 1;
+   /* background-color: #7f7fa6;*/
 
 }
 
 .button-container {
-    display: flex;
+    display:flex;
     justify-content: flex-start;  /* دکمه‌ها را به سمت چپ تراز می‌کند */
-    align-items: center;
     gap: 10px;  /* فاصله بین دکمه‌ها */
     padding: 10px;
     position: relative;
     width: 100%; 
     z-index: 10; 
-    margin-right: 91%;
+    margin-right: 88%;
 }
 
 .button_employer, .button_employee {
@@ -47,14 +50,15 @@ body{
     padding: 12px 24px;
     border-radius: 16px;
     border: none;
-    width: 75px;
+    width: 90px;
     height: 40px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
 }
 
 button.button_employer:hover, button.button_employee:hover {
-    background-color: #45a049;
+    background-color: #00CED1;
     transform: scale(1.05);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
@@ -63,7 +67,109 @@ button.button_employer:active, button.button_employee:active {
     transform: scale(0.95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+.text-container {
+    position: fixed;
+    transform: translateX(-45%); /* قرارگیری دقیق در وسط صفحه */
+    width: 500px;
+    height: 500px;
+    z-index: 0;
+    white-space: nowrap;
+}
 
+h1 {
+    width: 100%; /* پهنای کامل */
+    height: auto; /* ارتفاع خودکار */
+    font-weight: bold; /* بولد کردن متن */
+    font-size: 60px; /* بزرگتر کردن سایز متن */
+    text-align: center; /* وسط‌چین کردن متن */
+    text-shadow: 2px 2px 5px rgba(18, 18, 30, 0.526); 
+    top: 15%;
+    right: 15%;
+}
+
+h2{
+    width: 100%; /* پهنای کامل */
+    height: auto; /* ارتفاع خودکار */
+    font-weight: bold; /* بولد کردن متن */
+    font-size: 58px; /* بزرگتر کردن سایز متن */
+    text-align: center; /* وسط‌چین کردن متن */
+    color: #FFD700;
+    text-shadow: 2px 2px 5px rgba(18, 18, 30, 0.526); 
+    transform: translateX(23%);
+    -webkit-text-stroke: 1px rgb(18, 18, 30);
+    top: 15%;
+  
+}
+h3{
+    width: 100%; /* پهنای کامل */
+    height: auto; /* ارتفاع خودکار */
+    font-weight: bold; /* بولد کردن متن */
+    font-size: 35px; /* بزرگتر کردن سایز متن */
+    text-shadow: 2px 2px 5px rgba(18, 18, 30, 0.526); 
+    top: 50%;
+}
+.border-text {
+    padding: 10px;  /* فاصله بین متن و حاشیه */
+
+    border-radius: 80px;  /* گوشه‌های گرد */
+    display: inline-block;  /* برای این‌که `border` درست اعمال شود */
+}
+.searchright{
+    width: 100px;
+    height:50px;
+    transform: translateX(23%);
+    background-color:  rgba(87, 36, 100, 0.926);
+    position: fixed;
+    z-index: 0;
+    top: 45%;
+    right: 15%;
+    border-top-right-radius: 20px;  /* گرد کردن گوشه بالای چپ */
+    border-bottom-right-radius: 20px;  
+}
+.search{
+    width: 350px;
+    height:50px;
+    transform: translateX(23%);
+    background-color: #FFD700;
+    position: fixed;
+    z-index: 0;
+    top: 45%;
+    right: 23.23%;
+    border-top-left-radius: 20px;  /* گرد کردن گوشه بالای چپ */
+    border-bottom-left-radius: 20px; 
+    border: 2px solid rgba(18, 18, 30, 0.526);
+    font-size: 20px;
+}
+.hexagon-container {
+    position: fixed;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%); /* قرارگیری دقیق در وسط صفحه */
+    width: 750px;
+    height: 650px;
+    overflow: hidden; /* برای مخفی کردن بخش‌های بیرون از شش‌ضلعی */
+    z-index: 0;
+  }
+.hexagon {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 36, 100, 0.926); 
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.img1{
+    border-radius: 5%;
+    width: 650px;
+    height: 500px;;
+    object-fit: cover;
+    position: fixed; /* موقعیت ثابت */
+    top: 50%; /* در وسط صفحه از بالا */
+    left: 3.5%; /* فاصله از سمت چپ */
+    transform: translateY(-50%); 
+    border: 2px solid rgba(18, 18, 30, 0.526);
+}
 /* استایل‌های جدید برای تگ <a> */
 a {
     text-decoration: none;  /* حذف خط زیر لینک */
@@ -154,11 +260,12 @@ nav label {
 nav label span {
     display: inline-block;
     width: 100%;
-    height: 3px;
-    background-color: rgb(36, 36, 36);
+    height: 5px;
+    background-color: rgb(18, 18, 30);
     position: relative;
     border-radius: 50px;
     transition: 0.4s;
+    margin-right: 10px;
 }
 nav label span.top {
     top: -5px;
@@ -173,7 +280,7 @@ nav  ul {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #7f7fa6;
+    background-color:  #FFD700;
     padding-top: 100px;
     transform: translateX(100%);
     transition: 0.4s;
@@ -189,7 +296,7 @@ nav ul li {
     padding: 4%;
 }
 nav ul li:hover {
-    background-color: rgb(146, 150, 150);
+    background-color: rgba(18, 18, 30, 0.526);
 }
 
 #inputTag:checked ~ ul {
@@ -197,7 +304,7 @@ nav ul li:hover {
 
  }
  #inputTag:checked ~ label span {
-    background-color: #fff;
+    background-color: rgba(18, 18, 30, 0.526);
     
  }
  #inputTag:checked ~ label span.middle {

@@ -13,7 +13,7 @@ body , html{
     display: flex;
     justify-content: center;
     align-items: center;  
-    background-color: #fffffffc;
+    background-color:  #cef7f7;
     
 }
 
@@ -36,7 +36,7 @@ body , html{
     cursor: pointer;
 }
 label{
-    color: white;
+    color: rgba(87, 36, 100, 0.926);
     margin-bottom: 10px;
 }
 .login{
@@ -48,7 +48,7 @@ label{
     border-radius: 5px;
     width: 250px;
     height: 30px;
-    background-color: rgb(18, 18, 30);
+    background-color: rgba(87, 36, 100, 0.926);
     
 }
 .FamilyName {
@@ -56,14 +56,14 @@ label{
     border-radius: 5px;
     width: 250px;
     height: 30px;
-    background-color: rgb(18, 18, 30);
+    background-color: rgba(87, 36, 100, 0.926);
 }
 .Phone{
     border: 1px solid white;
     border-radius: 5px;
     width: 250px;
     height: 30px;
-    background-color: rgb(18, 18, 30);
+    background-color: rgba(87, 36, 100, 0.926);
     
 }
 .email{
@@ -71,7 +71,7 @@ label{
     border-radius: 5px;
     width: 250px;
     height: 30px;
-    background-color: rgb(18, 18, 30);
+    background-color: rgba(87, 36, 100, 0.926);
    
 }
 .city{
@@ -79,28 +79,28 @@ label{
     border-radius: 5px;
     width: 250px;
     height: 30px;
-    background-color: rgb(18, 18, 30);
+    background-color: rgba(87, 36, 100, 0.926);
 }
 .company{
     border: 1px solid white;
     border-radius: 5px;
     width: 250px;
     height: 30px;
-    background-color: rgb(18, 18, 30);
+    background-color: rgba(87, 36, 100, 0.926);
 }
 .username{
     border: 1px solid white;
     border-radius: 5px;
     width: 250px;
     height: 30px;
-    background-color: rgb(18, 18, 30);
+    background-color: rgba(87, 36, 100, 0.926);
 }
 .password{
     border: 1px solid white;
     border-radius: 5px;
     width: 250px;
     height: 30px;
-    background-color: rgb(18, 18, 30);
+    background-color: rgba(87, 36, 100, 0.926);
 }
 
 .namebox{
@@ -212,7 +212,7 @@ label{
     height: 780px; 
     border-radius: 5%;
     border:3px solid rgb(18, 18, 30);
-    background-color: #7f7fa6;
+    background-color: #FFD700;
     padding-right: 10% ;
     padding-bottom: 10%;
     padding-top: 15%;
@@ -233,7 +233,7 @@ label{
     }
     
     label{
-        color: white;
+        color: rgba(87, 36, 100, 0.926);
         margin-bottom: 10px;
     }
     .login{
