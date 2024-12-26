@@ -2,7 +2,7 @@
 const profileImage = document.querySelector('.profile_user img');
 
 // انتخاب فرم
-const form = document.getElementById('myForm');
+const form = document.getElementById('content');
 
 // اطمینان از وجود المان‌های موردنظر
 if (profileImage && form) {

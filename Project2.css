@@ -19,7 +19,7 @@ body{
    
 }
 #header{
-
+    background-color: #FFD700;
     padding: 1%;
     top: 0;
     margin: 0;
@@ -180,16 +180,186 @@ nav ul li:hover {
 }
 
 /* فرم مخفی در ابتدا */
-#myForm {
+#content {
     display: none; /* فرم پنهان */
-    margin: 20px auto;
+    margin: auto ;
     padding: 20px;
+    border-radius: 5px;
+    text-align: right;
+}
+.title{
+    margin-top: 1%;
+    margin-right: 17%;
+    font-size: x-large;
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* برای چینش افقی وسط */
+    align-items: center; /* برای چینش عمودی وسط */
+    gap: 30px; /* فاصله بین باکس‌ها */
+    height: 60vh; /* تنظیم ارتفاع صفحه */
+    padding: 30px;
+}
+#username{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    background-color: rgba(87, 36, 100, 0.926);
+}
+.usernamebox{
+    width: 500px;
+    height: 40px;
+    display: flex;
+    gap: 53px;
+    margin-top: 10% ;
+    margin-right: 10%;
+}
+.user_label{
+    margin-top: -6%;
+    white-space: nowrap;
+}
+#email{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    background-color: rgba(87, 36, 100, 0.926);
+   
+}
+.emailbox{
+    width: 500px;
+    height: 40px;
+    display: flex;
+    gap: 65px;
+    margin: 10px ;
+    margin-right: 25px;
+}
+.email_label{
+    margin-top: -6%;
+ 
+    margin-right: 7.5%;
+}
+
+#password{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    background-color: rgba(87, 36, 100, 0.926);
+}
+.passwordbox{
+    width: 500px;
+    height: 40px;
+    display: flex;
+    gap: 57px;
+    margin: 10px ;
+    margin-right: 25px;
+}
+.password_label{
+    margin-top: -6%;
+    white-space: nowrap;
+    margin-right: 8.8%;
+
+}
+
+
+.profilebox, .seting {
+    border: 2px solid rgba(87, 36, 100, 0.926);
+    background-color: #fce562;
+    padding: 20px;
+    border-radius: 5px;
+    width: 600px;
+    height: 430px;
+}
+
+.seting h2, .profilebox h2 {
+    color: #6a1b9a;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f9f9f9;
-    width: 300px;
-    height: 300px;
-    text-align: right;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button{
+    margin-right: 70%;
+    margin-top: 8%;
+    
+}
+button{
+    width: 130px;
+    height: 40px;
+}
+button:hover {
+    background-color: #4a148c;
+}
+
+.profile {
+   
+    text-align: center;
+}
+
+.avatar {
+    border: 2px solid rgba(87, 36, 100, 0.926);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.text1{
+    display: flex;
+    gap: 200px;
+    margin-top: 4%;
+}
+.job{
+    width: 100px;
+    height: 30px;
+    margin-right: 13%;
+}
+.pro{
+    width: 50px;
+    height: 30px;
+    white-space: nowrap;
+}
+.text2{
+    display: flex;
+    gap: 200px;
+    margin-top: 4%;
+}
+.sabeghe{
+    width: 100px;
+    height: 30px;
+    margin-right: 13%;
+}
+.year{
+    width: 50px;
+    height: 30px;
+    white-space: nowrap;
+}
+.x{
+    margin: auto;
+}
+h5{
+    margin-top: -1%;
+    margin-right: 18%;
+    border: 1px solid rgba(87, 36, 100, 0.926) ;
+    color: #fff;
+    background-color:rgba(87, 36, 100, 0.926) ;
+    width: 50px;
+    border-radius: 20%;
 }
 
 /* استایل دکمه ارسال */
