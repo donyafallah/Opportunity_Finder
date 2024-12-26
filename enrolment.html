@@ -10,8 +10,8 @@
 
     <div class="information">
 
-    <form action="/login" method="POST">
-        <b><h4 >اطلاعات شخصی</h4></b>
+    <form action="/login" method="POST" id="myform">
+        <b><h4>اطلاعات شخصی</h4></b>
         <div class="namebox">
             <label>نام</label>
             <input type="text" placeholder="نام  خود را وارد کنید." class="Name">
@@ -29,32 +29,32 @@
             <input type="text" placeholder="شماره تلفن همراه خود را وارد کنید." class="Phone">
         </div>
         <div class="provincebox">
-                <label for="province1">استان</label>
-                <div class="province">
-                    <select id="province" name="province">
-                       <option value="">انتخاب استان</option>
-                       <option value="tehran">تهران</option>
-                       <option value="isfahan">اصفهان</option>
-                       <option value="shiraz">فارس</option>
-                       <option value="mashhad">خراسان رضوی</option>
-                       <option value="tabriz">آذربایجان شرقی</option>
-                       <option value="ahvaz">خوزستان</option>
-                       <option value="kerman">کرمان</option>
-                       <option value="rasht">گیلان</option>
-                       <option value="qom">قم</option>
-                       <option value="yazd">یزد</option>
-                       <option value="karaj">البرز</option>
-                       <option value="hamedan">همدان</option>
-                       <option value="zanjan">زنجان</option>
-                       <option value="kermanshah">کرمانشاه</option>
-                       <option value="gilan">مازندران</option>
-                       <option value="khorasan">خراسان شمالی</option>
-                    </select>
-                </div>  
+            <label for="province1">استان</label>
+            <div class="province">
+                <select id="province" name="province">
+                    <option value="">انتخاب استان</option>
+                    <option value="tehran">تهران</option>
+                    <option value="isfahan">اصفهان</option>
+                    <option value="shiraz">فارس</option>
+                    <option value="mashhad">خراسان رضوی</option>
+                    <option value="tabriz">آذربایجان شرقی</option>
+                    <option value="ahvaz">خوزستان</option>
+                    <option value="kerman">کرمان</option>
+                    <option value="rasht">گیلان</option>
+                    <option value="qom">قم</option>
+                    <option value="yazd">یزد</option>
+                    <option value="karaj">البرز</option>
+                    <option value="hamedan">همدان</option>
+                    <option value="zanjan">زنجان</option>
+                    <option value="kermanshah">کرمانشاه</option>
+                    <option value="gilan">مازندران</option>
+                    <option value="khorasan">خراسان شمالی</option>
+                </select>
+            </div>  
         </div>        
         <div class="citybox">
-                <label>شهر</label>
-                <input type="text" placeholder="شهر خود را وارد کنید" class="city">
+            <label>شهر</label>
+            <input type="text" placeholder="شهر خود را وارد کنید" class="city">
         </div>   
         <div class="genderbox">
             <label>جنسیت</label>
@@ -75,17 +75,26 @@
             <input type="text" placeholder="رمز عبور خود را وازرد کنید" class="password">
         </div>
         <div class="form-group">
-           <a href="login_employer.html" target="_blank">ورود به عنوان کارفرما</a>
+            <a href="login_employer.html" target="_blank">ورود به عنوان کارفرما</a>
+            
             <label>
                 <input type="checkbox" name="remember" id="remember"> مرا به خاطر بسپار
             </label>
         </div>
         <div class="buttonsbox">
-            <button class="cancel" type="reset" >لغو</button>
-            <button class="submit" type="submit" >ثبت اطلاعات</button>
+            <button class="cancel" type="button" onclick="resetForm()">لغو</button>
+            <a href="Project2.html"><button class="submit" type="button">ثبت اطلاعات</button></a>
         </div>
     </form>
     </div>
+
+    <script>
+        // اصلاح شناسه فرم به "myform"
+        // done
+        function resetForm() {
+            document.getElementById('myform').reset(); // بازگرداندن فرم به وضعیت اولیه
+        }
+    </script>
 
 </body>
 </html>

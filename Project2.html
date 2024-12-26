@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Project.css">
+    <link rel="stylesheet" href="Project2.css">
 </head>
 <body>
     
     <div id="header" class="fixed">
-      <div class="button-container">
-        <a href="login.html"><button class="button_employer" >ورود</button></a>
-        <a href="enrolment.html"><button class="button_employee" >ثبت نام</button></a>        
-      </div>
+       <div class="bell" ><img src="bell.svg" ></div>
+       <div class="profile_user"><img src="user2.jpg" alt="کلیک کنید" class="clickable-image"></div>        
+       <div class="Profile_name">سارا سعادتی </div>
       <!-- <div class="bell">
         <img src="bell.svg" >
       </div>
@@ -26,21 +25,7 @@
          <img src="align_justify.svg">
       </div> -->
      </div>
-     <div class="text-container">
-         <h1>از جستجو تا استخدام ، با یک کلیک!</h1>
-         <h2><span class="border-text">فرصت یاب</span></h2>
-         <h3>پلتفرمی برای جویندگان کار و کارفرمایان</h3>
-     </div>
-     <div class="searchbox">
-        <div class="searchleft">
-          <input type="text" placeholder="دنبال چه شغلی می گردید؟" class="search">
-        </div>
-        <div class="searchright"></div>
-     </div>
-     <div class="hexagon-container">
-       <div class="hexagon "></div>
-     </div>
-      <img src="3.jpg" alt="Profile Picture" class="img1">
+     
      <nav>
       <div id="sidebar" class="sidebar2">
         <input type="checkbox" name="" id="inputTag">
@@ -65,10 +50,19 @@
           <li><a href="#">خروج</a></li>
       </ul>
       </div>
-        <div id="content" class="content2"></div>
+        <div id="content" class="content2"> 
+              <!-- فرم مخفی -->
+    <div id="myForm">
+        <h2>فرم تماس</h2>
+        <form>
+
+            <button type="submit" class="submit-button">ارسال</button>
+        </form>
+    </div>
+        </div>
     </div>
  </nav>
-  <script src="button.js"></script>
+  <script src="Profile.js"></script>
 
 </body>
 </html>

@@ -318,7 +318,8 @@ nav ul li:hover {
     transform: rotate(45deg);
     top: -3px;
 
- }
+}
+
 
  @media screen and (max-width: 576px) {
     body {
