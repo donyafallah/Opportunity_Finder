@@ -14,6 +14,7 @@ if (profileImage && form) {
         } else {
             form.style.display = 'block'; // نمایش فرم
         }
+        
     });
 } else {
     console.error('عناصر موردنظر پیدا نشدند. مطمئن شوید کلاس‌ها و آی‌دی‌ها درست هستند.');

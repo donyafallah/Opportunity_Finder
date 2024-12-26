@@ -360,9 +360,12 @@ h5{
     background-color:rgba(87, 36, 100, 0.926) ;
     width: 50px;
     border-radius: 20%;
+
 }
 
-/* استایل دکمه ارسال */
+/* استایل دکمه ارسال 
+
+*/
 .submit-button {
     padding: 10px 20px;
     background-color: #4CAF50;
