@@ -19,7 +19,7 @@ body{
    
 }
 #header{
-    background-color: #FFD700;
+    background-color: #f6d82b;
     padding: 1%;
     top: 0;
     margin: 0;
@@ -39,6 +39,7 @@ body{
     margin-right: 98%;
     margin-top: 10px;
     padding-bottom: -10px;
+    z-index: 10;
 }
 .profile_user img{
     width: 65px;
@@ -107,6 +108,7 @@ nav label {
     z-index: 3;
     margin-top: -100px;
     
+    
 }
 nav label span {
     display: inline-block;
@@ -131,10 +133,11 @@ nav  ul {
     position: absolute;
     top: 0;
     right: 0;
-    background-color:  #FFD700;
+    background-color:  #f6d82b;
     padding-top: 100px;
     transform: translateX(100%);
     transition: 0.4s;
+    z-index: 10;
 
 }
 nav ul li {
@@ -179,7 +182,57 @@ nav ul li:hover {
     transform: scale(1.05); /* جلوه بزرگ شدن هنگام هاور */
 }
 
-/* فرم مخفی در ابتدا */
+.clickable-bell { 
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .clickable-bell:hover {
+    transform: scale(1.05); 
+  }
+  
+
+  .bell:hover + #messages {
+    display: block; /* نمایش پیام‌ها زمانی که موس روی آیکون است */
+  }
+ .messages{
+    margin-left: 10px;
+    
+ } 
+  .message {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-top: 10px;
+    margin-right: 78%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;  /* اضافه کردن position relative */
+    z-index: 2;  /* آیکون همبرگر بالاتر از سایر المان‌ها */
+    width:23%;
+    height: 25%;
+  }
+
+  .message:hover {
+    transform: scale(1.02); /* انیمیشن نمایش هنگام هاور */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* سایه بیشتر در هنگام هاور */
+  }
+  
+  .icon {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #4CAF50; /* رنگ سبز برای آیکون */
+  }
+  
+  p {
+    margin: 0;
+    color: #333; /* رنگ متن پیام */
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
 #content {
     display: none; /* فرم پنهان */
     margin: auto ;
@@ -239,7 +292,7 @@ nav ul li:hover {
 }
 .email_label{
     margin-top: -6%;
- 
+    white-space: nowrap;
     margin-right: 7.5%;
 }
 
@@ -351,7 +404,12 @@ button:hover {
 }
 .x{
     margin: auto;
+    cursor: pointer;
 }
+.myform {
+    display: none;
+    /* سایر استایل‌های دلخواه */
+  }
 h5{
     margin-top: -1%;
     margin-right: 18%;

@@ -8,24 +8,22 @@
 </head>
 <body>
     
-    <div id="header" class="fixed">
-       <div class="bell" ><img src="bell.svg" ></div>
-       <div class="profile_user"><img src="user2.jpg" alt="کلیک کنید" class="clickable-image"></div>        
-       <div class="Profile_name">سارا سعادتی </div>
-      <!-- <div class="bell">
-        <img src="bell.svg" >
-      </div>
-      <div class="profile_user">
-        <img src="user.jpg" >-->
-      </div> 
-      <!-- <div class="logo">
-        <img src="uni.PNG">
-      </div> -->
-      <!-- <div class="align">
-         <img src="align_justify.svg">
-      </div> -->
-     </div>
-     
+  <div id="header" class="fixed">
+    <div class="bell">
+      <img src="bell.svg" class="clickable-bell" onclick="toggleMessages()">
+    </div>
+  
+    <div class="profile_user">
+      <img src="user2.jpg" alt="کلیک کنید" class="clickable-image">
+    </div>
+    
+    <div class="Profile_name">سارا سعادت</div>
+  </div>
+  
+
+  </div>
+  
+
      <nav>
       <div id="sidebar" class="sidebar2">
         <input type="checkbox" name="" id="inputTag">
@@ -50,65 +48,81 @@
           <li><a href="#">خروج</a></li>
       </ul>
       </div>
-        <div id="content" class="content2"> 
-          <div class="title">
-            <h1>حساب کاربری</h1>
-            <h4>صفحه اصلی/مدیریت حساب کاربری</h4>
-          </div>
-              <!-- فرم مخفی -->
-          <div id="container" class="container">
-
-            
-            <div class="profilebox">
-              <div class="profile">
-                  <img src="user2.jpg" alt="Avatar" class="avatar">
-                  <h3 >سارا سعادتی</h3>
-                  <h5 >دانشجو</h5>
-                  <div class="text1">
-                    <p1 class="job">شغل</p1>
-                    <p3 class="pro">برنامه نویس</p3>
-                  </div>
-                  <div class="text2">
-                    <p1 class="sabeghe">سابقه کار</p1>
-                    <p3 class="year">5سال</p3>
-                  </div>
-                  
-                  <button class="x">مشاهده جزئیات</button>
+      
+      <div id="content" class="content2"> 
+        <div class="title">
+          <h1>حساب کاربری</h1>
+          <h4>صفحه اصلی/مدیریت حساب کاربری</h4>
+        </div>
+        
+        <!-- فرم مخفی -->
+        <div id="container" class="container">
+      
+          <div class="profilebox">
+            <div class="profile">
+              <img src="user2.jpg" alt="Avatar" class="avatar">
+              <h3>سارا سعادت</h3>
+              <h5>دانشجو</h5>
+              <div class="text1">
+                <p1 class="job">شغل</p1>
+                <p3 class="pro">برنامه نویس</p3>
               </div>
+              <div class="text2">
+                <p1 class="sabeghe">سابقه کار</p1>
+                <p3 class="year">5سال</p3>
+              </div>
+              
+              <button class="x" onclick="toggleForm()">مشاهده جزئیات</button>
             </div>
-
-
-            <div id="myForm" class="myform">
-
-              <div class="seting">
-                <h2>تنظیمات عمومی</h2>
+          </div>
+      
+          <!-- فرم تنظیمات عمومی -->
+          <div id="myForm" class="myform" style="display: none;">
+            <div class="seting">
+              <h2>تنظیمات عمومی</h2>
               <form>
                 <div class="usernamebox">
-                  <label class="user_label">نام کاربری</label>
+                  <label class="user_label">تغییر نام کاربری</label>
                   <input type="text" id="username">
                 </div>
                 <div class="emailbox">
-                  <label class="email_label">ایمیل</label>
-                  <input type="email" id="email" >
+                  <label class="email_label">تغییر ایمیل</label>
+                  <input type="email" id="email">
                 </div>
                 <div class="passwordbox">
-                  <label class="password_label">رمز عبور</label>
-                  <input type="password" id="password" >
+                  <label class="password_label">تغییر رمز عبور</label>
+                  <input type="password" id="password">
                 </div>
+      
+              
                 <div class="button">
-                <button type="submit">ثبت تغییرات</button>
+                  <button type="submit">ثبت تغییرات</button>
                 </div>
               </form>
-              </div>
-
             </div>
-
           </div>
-
+      
+        </div>
+      </div>
+      
         </div>
 
     </div>
  </nav>
+   <!-- پیام‌ها -->
+   <div id="messages" class="messages" style="display: none;">
+    <div class="message">
+      <span class="icon">&#128276;</span> <!-- آیکون برای اعلان -->
+      <p>شرکت داتین رزومه شما را دید </p>
+    </div>
+    <div class="message">
+      <span class="icon">&#128276;</span> <!-- آیکون برای اعلان -->
+      <p>شرکت ایرانسل رزومه شما را رد کرد </p>
+    </div>
+    <div class="message">
+      <span class="icon">&#128276;</span> <!-- آیکون برای اعلان -->
+      <p>شرکت راهکار سرزمین هوشمند رزومه شما را در اولویت قرار داد </p>
+    </div>
   <script src="Profile.js"></script>
 
 </body>
