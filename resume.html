@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="resume.css">
 </head>
 <body>
+    <nav>
+        <div id="sidebar" class="sidebar2">
+            <input type="checkbox" name="" id="inputTag">
+            <label for="inputTag">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </label>
+            <ul>
+                <br>
+                <li><a href="#">صفحه اصلی</a></li>
+                <br>
+                <li><a href="#">رزومه</a></li>
+                <br>
+                <li><a href="#">آگهی ها</a></li>
+                <br>
+                <li><a href="#">نتایج</a></li>
+                <br>
+                <li><a href="#">خروج</a></li>
+            </ul>
+        </div>
+    </nav>
+    
     <div class="container">
         <h1>فرم اطلاعات رزومه</h1>
         
@@ -99,31 +122,47 @@
         <option value="lightgreen">سبز روشن</option>
         <option value="lightyellow">زرد روشن</option>
         <option value="lightpink">صورتی روشن</option>
+        <option value="lavender">اسطوخودوس</option>
+        <option value="peachpuff">هلویی</option>
+        <option value="khaki">کاکی</option>
+        <option value="salmon">سالمون</option>
+        <option value="gold">طلایی</option>
+        <option value="plum">آلو</option>
+        <option value="mintcream">کرم نعنایی</option>
+        <option value="powderblue">آبی پودری</option>
+        <option value="cornsilk">ابریشمی</option>
+        <option value="lightcoral">مرجانی روشن</option>
+        <option value="aliceblue">آبی آلیس</option>
+        <option value="honeydew">شبنم عسلی</option>
+        <option value="seashell">صدفی</option>
+        <option value="wheat">گندمی</option>
+        <option value="bisque">بیسکویتی</option>
+                
     </select>
 </div>
 
 <div class="form-group">
     <label for="background-pattern">انتخاب طرح پس‌زمینه:</label>
     <select id="background-pattern" name="background-pattern">
-        <option value="gradient1">گرادیان آبی</option>
-        <option value="gradient2">گرادیان صورتی</option>
-        <option value="stripes">خطوط مورب</option>
+        <option value="pixel">پیکسلی</option>
         <option value="dots">نقاط</option>
         <option value="checkerboard">شطرنجی</option>
-        <option value="wavy">موج‌دار</option>
         <option value="rainbow">رنگین‌کمانی</option>
-        <option value="wave">موج آبی</option>
         <option value="brick">آجر</option>
-        <option value="pixel">پیکسلی</option>
+        
     </select>
 </div>
 
         
-            <!-- دکمه ارسال -->
-            <button type="submit">ارسال</button>
+<!-- دکمه‌های اضافی -->
+<div class="form-group">
+    <button type="button" id="viewResume" class="btn">مشاهده رزومه</button>
+</div>
+
         </form>
         
     </div>
+
     <script src="resume.js"></script>
 </body>
 </html>
