@@ -1,59 +1,70 @@
-/* styles.css */
 body {
     font-family: url(Shabnam-Bold.ttf);
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    direction: rtl;
-    background-color: #cef7f7
+    text-align: center;
 }
 
 header {
-    font-family: url(Shabnam-Bold.ttf);
-    background-color: #8e44ad;
+    background-color: #6a1b9a;
     color: white;
-    padding: 15px;
-    text-align: center;
-    font-size: 20px;
+    padding: 20px;
+}
+
+.mailbox img {
+    margin: 20px auto;
+    width: 100px;
 }
 
 .nav-tabs {
+    list-style: none;
+    padding: 0;
     display: flex;
-    justify-content: space-around;
-    background-color: #fffb00;
-    padding: 10px 0;
+    justify-content: center;
+    background-color: #ffeb3b;
     margin: 0;
-    list-style-type: none;
 }
 
 .nav-tabs li {
+    margin: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    background-color: #7b1fa2;
+    color: white;
+    border-radius: 5px;
 }
 
-.nav-tabs .active {
-    color: white;
-    background-color: #8e44ad;
-    border-radius: 20px;
+.nav-tabs li:hover {
+    background-color: #512da8;
 }
 
 .tab-content {
-    padding: 20px;
+    font-family: url(Shabnam-Bold.ttf);
+    font-size: 25px;
+    margin: 120px auto;
+    padding: 50px;
+    background-color: #e3f2fd;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    max-width: 400px;
+}
+.tab-link {
+    font-family: url(Shabnam-Bold.ttf);
+    font-size: larger;
+    background-color: #f1f1f1;
+    border: none;
+    color: black;
+    padding: 15px 25px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
-.text-center {
-    font-size: 25px;
-    color: #000000;
+.active {
+    /* استایل برای دکمه فعال */
+    background-color: #f263ff;
+    color: white;
 }
-
-.text-center img {
-    max-width: 500px;
-    margin: 20px 0;
-}
-
-.no-results {
-    font-size: 25px;
-    color: #e74c3c;
-}
-
-

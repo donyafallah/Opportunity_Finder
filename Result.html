@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رزومه های ارسالی </title>
+    <title>رزومه‌های ارسالی</title>
     <link rel="stylesheet" href="Result.css">
 </head>
 <body>
+    
     <header>
-        <div class="logo">نتایج استخدام</div>
+        <h1>رزومه‌های ارسالی</h1>
     </header>
-
-    <main>
+    <div class="tabs">
         <ul class="nav-tabs">
-            <li class="active">رد شده</li>
-            <li class="active">تایید اولیه</li>
-            <li class="active">بررسی شده</li>
-            <li class="active">در صف بررسی</li>
+            <button class="tab-link active" onclick="showContent('all')">همه</button>
+            <button class="tab-link active" onclick="showContent('pending')">در صف بررسی</button>
+            <button class="tab-link active" onclick="showContent('reviewed')">بررسی شده</button>
+            <button class="tab-link active" onclick="showContent('rejected')">رد شده</button>
         </ul>
-
-        <div class="tab-content">
-            <div class="tab-pane active">
-                <div class="text-center">
-                    <img src="Screenshot (48).png" alt="هیچ موردی یافت نشد">
-                    <p>این درخواست‌ها ارسال شده و در صف بررسی قرار دارند.</p>
-                    <p class="no-results">موردی یافت نشد!</p>
-                </div>
-            </div>
+    </div>
+    <div class="tab-content" id="all">
+        <p>رزومه ی شما برای شرکت های گلرنگ سیستم 
+            - آریان گستر
+             ایرانسل 
+             و هلدینگ فناوری نوآوری آراد ارسال شده است</p>
         </div>
-    </main>
-
-    <footer>
-      
-    </footer>
+    <div class="tab-content" id="pending" style="display: none;">
+        <p>شرکت آراد رزومه ی شما را در صف بررسی قرار داده است</p>
+        </div>
+        <div class="tab-content" id="reviewed" style="display: none;">
+            <p>شرکت گلرنگ رزومه ی شمارا بررسی کرد و با درخواست شما موافقت کرد</p>
+        </div>
+        <div class="tab-content" id="rejected" style="display: none;">
+            <p>شرکت آراد درخواست شما را رد کرد</p>
+         </div>
 </body>
+<script src="Result.js"></script>
 </html>
