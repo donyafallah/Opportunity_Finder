@@ -16,6 +16,98 @@ body , html{
     background-color:  #cef7f7;
     
 }
+#inputTag {
+    display: none;
+}
+nav {
+   
+    position: fixed;
+    width: 100%;
+    height: 95px;
+    
+    margin-right: -10px;
+    position: relative;
+   
+}
+nav label {
+    width: 30px;
+    height: 100px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    position:absolute;
+    z-index: 3;
+    margin-top: -100px;
+    
+    
+}
+nav label span {
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(18, 18, 30);
+    position: relative;
+    border-radius: 50px;
+    transition: 0.4s;
+    margin-right: 10px;
+}
+nav label span.top {
+    top: -5px;
+}
+nav label span.bottom {
+    top: 5px;
+}
+
+nav  ul {
+    width: 10%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color:  #f6d82b;
+    padding-top: 100px;
+    transform: translateX(100%);
+    transition: 0.4s;
+    z-index: 10;
+
+}
+nav ul li {
+    
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+    
+    cursor:pointer;
+    padding: 4%;
+}
+nav ul li:hover {
+    background-color: rgba(18, 18, 30, 0.526);
+}
+
+#inputTag:checked ~ ul {
+    transform: translateX(0);
+
+ }
+ #inputTag:checked ~ label span {
+    background-color: rgba(18, 18, 30, 0.526);
+    
+ }
+ #inputTag:checked ~ label span.middle {
+    opacity: 0 ;
+ }
+ #inputTag:checked ~ label span.top {
+    transform: rotate(-45deg);
+    top: 3px ;
+ }
+ #inputTag:checked ~ label span.bottom {
+    transform: rotate(45deg);
+    top: -3px;
+
+}
 
 .submit{
     color: white;
