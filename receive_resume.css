@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    font-family: Shabnam;
+}
+input::placeholder,
+textarea::placeholder {
+  color: rgb(225, 225, 225); 
+}
+@font-face{
+    font-family: Shabnam;
+    src: url(Shabnam-Bold.ttf);
+}
+body{
+   /* background-color: rgb(223, 223, 236);*/
+    overflow-x: hidden;
+    background-color: #cef7f7;
+
+   
+}
+#header{
+    background-color: #f6d82b;
+    padding: 1%;
+    top: 0;
+    margin: 0;
+    width: 100;
+    max-width: 100vw;
+    height: 95px;
+    position: relative;
+    z-index: 1;
+   /* background-color: #7f7fa6;*/
+
+}
+
+
+.bell img{
+    width: 35px;
+    height: 35px;
+    margin-right: 98%;
+    margin-top: 10px;
+    padding-bottom: -10px;
+    z-index: 10;
+}
+.profile_user img{
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    border: 2px solid rgba(18, 18, 30, 0.526);
+    margin-right: 93%;
+    margin-top: -90px ;
+}
+.Profile_name{
+
+    width: 15px;
+    height: 5px;
+    margin-right: 88%;
+    margin-top: -2.8% ;
+    white-space: nowrap;
+}
+
+#inputTag {
+    display: none;
+}
+nav {
+   
+    position: fixed;
+    width: 100%;
+    height: 95px;
+    
+    margin-right: -10px;
+    position: relative;
+   
+}
+nav label {
+    width: 30px;
+    height: 100px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    position:absolute;
+    z-index: 3;
+    margin-top: -100px;
+    
+    
+}
+nav label span {
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(18, 18, 30);
+    position: relative;
+    border-radius: 50px;
+    transition: 0.4s;
+    margin-right: 10px;
+}
+nav label span.top {
+    top: -5px;
+}
+nav label span.bottom {
+    top: 5px;
+}
+
+nav  ul {
+    width: 10%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color:  #f6d82b;
+    padding-top: 100px;
+    transform: translateX(100%);
+    transition: 0.4s;
+    z-index: 10;
+
+}
+nav ul li {
+    
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+    
+    cursor:pointer;
+    padding: 4%;
+}
+nav ul li:hover {
+    background-color: rgba(18, 18, 30, 0.526);
+}
+
+#inputTag:checked ~ ul {
+    transform: translateX(0);
+
+ }
+ #inputTag:checked ~ label span {
+    background-color: rgba(18, 18, 30, 0.526);
+    
+ }
+ #inputTag:checked ~ label span.middle {
+    opacity: 0 ;
+ }
+ #inputTag:checked ~ label span.top {
+    transform: rotate(-45deg);
+    top: 3px ;
+ }
+ #inputTag:checked ~ label span.bottom {
+    transform: rotate(45deg);
+    top: -3px;
+
+}
+
+.table-container {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+    max-height: 400px; /* حداکثر ارتفاع جدول */
+    overflow-x: auto; /* فعال‌سازی اسکرول افقی */
+    margin-top: 3%;
+    background-color: rgba(192, 148, 203, 0.926);
+}
+
+.resume-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.resume-table th, .resume-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.resume-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.resume-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.resume-table a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.resume-table a:hover {
+    text-decoration: underline;
+}
+
+.resume-table td {
+    vertical-align: middle;
+}
+
+.clickable-bell { 
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .clickable-bell:hover {
+    transform: scale(1.05); 
+  }
+  
+
+  .bell:hover + #messages {
+    display: block; /* نمایش پیام‌ها زمانی که موس روی آیکون است */
+  }
+ .messages{
+    margin-left: 10px;
+    margin-top: -30%;
+    
+ } 
+  .message {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-top: 10px;
+    margin-right: 78%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;  /* اضافه کردن position relative */
+    z-index: 2;  /* آیکون همبرگر بالاتر از سایر المان‌ها */
+    width:23%;
+    height: 25%;
+  }
+
+  .message:hover {
+    transform: scale(1.02); /* انیمیشن نمایش هنگام هاور */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* سایه بیشتر در هنگام هاور */
+  }

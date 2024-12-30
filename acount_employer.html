@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="acount_employer.css">
+</head>
+<body>
+    
+  <div id="header" class="fixed">
+    <div class="bell">
+      <img src="bell.svg" class="clickable-bell" onclick="toggleMessages()">
+    </div>
+  
+    <div class="profile_user">
+      <img src="employer5.jpg" alt="کلیک کنید" class="clickable-image">
+    </div>
+    
+    <div class="Profile_name">آریا فرهمند</div>
+  </div>
+
+  
+
+     <nav>
+      <div id="sidebar" class="sidebar2">
+        <input type="checkbox" name="" id="inputTag">
+        <label for="inputTag">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </label>
+        <div id="dynamic-content">
+
+        </div>
+        <ul>
+          <br>
+          <li><a href="Poroject.html">صفحه اصلی</a></li>
+          <br>
+          <li><a href="receive_resume.html">رزومه های دریافتی</a></li>
+          <br>
+          <li><a href="post_adv.html">ثبت آگهی</a></li>
+          <br>
+          <li><a href="#">آگهی های ثبت شده</a></li>
+          <br>
+          <li><a href="Poroject.html">خروج</a></li>
+      </ul>
+      </div>
+      
+      <div id="content" class="content2"> 
+        <div class="title">
+            <h1>داشبورد کارفرما</h1>
+            <h4>صفحه اصلی / تنظیمات حساب</h4>
+          </div>
+        
+        <!-- فرم مخفی -->
+        <div id="container" class="container">
+            <div class="profilebox">
+              <div class="profile">
+                <img src="employer5.jpg" alt="Company Logo" class="avatar">
+                <h3>شرکت توسعه نرم‌افزار داتین</h3>
+             
+              <div class="text3">
+                    <p1 class="activity">حوزه فعالیت</p1>
+                    <p3 class="info">فناوری اطلاعات</p3>
+              </div>
+              <div class="text4">
+                <p1 class="logoo">لوگوی شرکت</p1>
+                <img src="Dotin.jpg  " alt="لوگوی شرکت" id="company-logo" style="width: 100px; height: auto;">
+             </div>            
+              
+              <div class="text1">
+                  <p1 class="job">تعداد آگهی‌های فعال</p1>
+                  <p3 class="pro">3 آگهی</p3>
+              </div>
+              <div class="text2">
+                  <p1 class="sabeghe">سابقه فعالیت</p1>
+                  <p3 class="year">10 سال</p3>
+              </div>
+                <button class="x" onclick="toggleForm()">ویرایش اطلاعات</button>
+              </div>
+            </div>
+         
+          
+      
+          <!-- فرم تنظیمات عمومی -->
+          <div id="myForm" class="myform" style="display: none;">
+            <div class="seting">
+                <h2>تنظیمات حساب کارفرما</h2>
+              <form>
+                <div class="companynamebox">
+                    <label class="company_label">تغییر نام شرکت</label>
+                    <input type="text" id="companyname" placeholder="نام جدید شرکت">
+                </div>
+                <div class="emailbox">
+                  <label class="email_label">تغییر ایمیل</label>
+                  <input type="email" id="email" placeholder="ایمیل جدید">
+                </div>
+                <div class="phonebox">
+                    <label class="phone_label">تغییر شماره تماس</label>
+                    <input type="tel" id="phone" placeholder="شماره تماس جدید">
+                </div>
+                <div class="logobox">
+                    <label class="logo_label">تغییر لوگوی شرکت</label>
+                    <input type="file" id="logo" accept="image/*">
+                </div>
+                <div class="passwordbox">
+                  <label class="password_label">تغییر رمز عبور</label>
+                  <input type="password" id="password" placeholder="رمز عبور جدید">
+                </div>
+      
+              
+                <div class="button">
+                  <button type="submit">ثبت تغییرات</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+        </div>
+
+    </div>
+ </nav>
+   <!-- پیام‌ها -->
+   <div id="messages" class="messages" style="display: none;">
+    <div class="message">
+      <span class="icon">&#128276;</span> 
+      <p>کارجو علی احمدی رزومه خود را برای آگهی شما ارسال کرد.</p>
+    </div>
+    <div class="message">
+      <span class="icon">&#128276;</span> 
+      <p>کارجو 'امین علیپور' دعوت به مصاحبه را پذیرفته است.</p>
+    </div>
+    <div class="message">
+      <span class="icon">&#128276;</span> 
+      <p>آگهی 'برنامه‌نویس ارشد' شما تایید شد و اکنون فعال است.</p>
+    </div>
+    <div class="message">
+        <span class="icon">&#128276;</span> 
+        <p>کارجو 'سمانه جعفری' رزومه خود را به‌روزرسانی کرده است.</p>
+    </div>
+  <script src="acount_employer.js"></script>
+
+</body>
+</html>

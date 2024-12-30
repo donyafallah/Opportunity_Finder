@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="post_adv.css">
+</head>
+<body>
+    <div id="header" class="fixed">
+        <div class="bell">
+          <img src="bell.svg" class="clickable-bell" onclick="toggleMessages()">
+        </div>
+      
+        <div class="profile_user">
+          <img src="employer5.jpg" alt="کلیک کنید" class="clickable-image">
+        </div>
+        
+        <div class="Profile_name">آریا فرهمند</div>
+      </div>
+    <nav>
+        <div id="sidebar" class="sidebar2">
+            <input type="checkbox" name="" id="inputTag">
+            <label for="inputTag">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </label>
+            <ul>
+                <br>
+                <li><a href="acount_employer.html">صفحه اصلی</a></li>
+                <br>
+                <li><a href="receive_resume.html">رزومه های دریافتی</a></li>
+                <br>
+                <li><a href="post_adv.html">ثبت آگهی</a></li>
+                <br>
+                <li><a href="#">آگهی های ثبت شده</a></li>
+                <br>
+                <li><a href="Poroject.html">خروج</a></li>
+            </ul>
+        </div>
+    </nav>
+   <div class="cotainer">
+    <form action="/submit-job" method="POST">
+        <label for="job-title">عنوان شغل:</label>
+        <input type="text" id="job-title" name="job-title" required>
+      
+        <label for="job-description">توضیحات شغل:</label>
+        <textarea id="job-description" name="job-description" required></textarea>
+      
+        <label for="category">دسته‌بندی شغل:</label>
+        <select id="category" name="category">
+          <option value="it">IT</option>
+          <option value="marketing">بازاریابی</option>
+          <option value="finance">مالی</option>
+        </select>
+        
+        <div class="y">
+           <label>نوع همکاری:</label>
+           <input type="radio" id="full-time" name="job-type" value="full-time">
+           <label for="full-time">تمام‌وقت</label>
+           <input type="radio" id="part-time" name="job-type" value="part-time">
+           <label for="part-time">پاره‌وقت</label>
+           <input type="radio" id="project-based" name="job-type" value="project-based">
+           <label for="project-based">پروژه‌ای</label>
+        </div>
+      
+        <label for="location">محل کار:</label>
+        <input type="text" id="location" name="location">
+      
+        <label for="experience-level">سطح تجربه:</label>
+        <select id="experience-level" name="experience-level">
+          <option value="entry">تازه‌کار</option>
+          <option value="mid">متوسط</option>
+          <option value="senior">حرفه‌ای</option>
+        </select>
+      
+        <label for="salary">حقوق پیشنهادی:</label>
+        <input type="text" id="salary" name="salary">
+        <div class="d">
+          <input type="checkbox" id="negotiable" name="negotiable">
+          <label for="negotiable">قابل مذاکره</label>
+        </div>
+
+        <label for="skills">مهارت‌های مورد نیاز:</label>
+        <input type="text" id="skills" name="skills" placeholder="مهارت‌ها را وارد کنید">
+      
+        <label for="contact">اطلاعات تماس:</label>
+        <input type="text" id="contact" name="contact">
+      
+        <label for="deadline">مهلت ارسال درخواست:</label>
+        <input type="date" id="deadline" name="deadline">
+      
+        <label for="attachment">پیوست:</label>
+        <input type="file" id="attachment" name="attachment">
+      
+        <button type="submit">ثبت آگهی</button>
+      </form>
+    </div>  
+
+    <div id="messages" class="messages" style="display: none;">
+        <div class="message">
+          <span class="icon">&#128276;</span> 
+          <p>کارجو علی احمدی رزومه خود را برای آگهی شما ارسال کرد.</p>
+        </div>
+        <div class="message">
+          <span class="icon">&#128276;</span> 
+          <p>کارجو 'امین علیپور' دعوت به مصاحبه را پذیرفته است.</p>
+        </div>
+        <div class="message">
+          <span class="icon">&#128276;</span> 
+          <p>آگهی 'برنامه‌نویس ارشد' شما تایید شد و اکنون فعال است.</p>
+        </div>
+        <div class="message">
+            <span class="icon">&#128276;</span> 
+            <p>کارجو 'سمانه جعفری' رزومه خود را به‌روزرسانی کرده است.</p>
+    </div>
+    <script src="receive_resume.js"></script>
+    
+</body>
+</html>
