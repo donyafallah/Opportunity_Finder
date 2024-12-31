@@ -7,6 +7,29 @@
     font-family: Shabnam;
     src: url(Shabnam-Bold.ttf);
 }
+
+#header{
+    background-color: #f6d82b;
+    padding: 1%;
+    top: 0;
+    margin: 0;
+    width: 100;
+    max-width: 100vw;
+    height: 95px;
+    position: relative;
+    z-index: 1;
+
+}
+.Profile_name{
+
+    width: 15px;
+    height: 30px;
+    margin-right: 4%;
+    margin-top: 1.5% ;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    color: rgba(87, 36, 100, 0.926); ;
+}
 body{
     background-color: rgb(223, 223, 236);
     overflow-x: hidden;
@@ -14,17 +37,113 @@ body{
 }
 .container {
     max-width: 1300px;
-    margin: auto;
+    /* margin: auto; */
 }
+nav {
+   
+    position: fixed;
+    width: 100%;
+    height: 95px;
+    
+    margin-right: -10px;
+    position: relative;
+    z-index: 2;
+   
+}
+nav label {
+    width: 30px;
+    height: 100px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    margin-top: -100px;
+    
+}
+nav label span {
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(18, 18, 30);
+    position: relative;
+    border-radius: 50px;
+    transition: 0.4s;
+    margin-right: 10px;
+}
+nav label span.top {
+    top: -5px;
+}
+nav label span.bottom {
+    top: 5px;
+}
+
+nav  ul {
+    width: 10%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color:  #FFD700;
+    padding-top: 100px;
+    transform: translateX(100%);
+    transition: 0.4s;
+
+}
+nav ul li {
+    
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+    
+    cursor:pointer;
+    padding: 4%;
+}
+nav ul li:hover {
+    background-color: rgba(18, 18, 30, 0.526);
+}
+
+#inputTag:checked ~ ul {
+    transform: translateX(0);
+
+ }
+ #inputTag:checked ~ label span {
+    background-color: rgba(18, 18, 30, 0.526);
+    
+ }
+ #inputTag:checked ~ label span.middle {
+    opacity: 0 ;
+ }
+ #inputTag:checked ~ label span.top {
+    transform: rotate(-45deg);
+    top: 3px ;
+ }
+ #inputTag:checked ~ label span.bottom {
+    transform: rotate(45deg);
+    top: -3px;
+
+}
+#wrap {
+    display: flex;
+    gap: 25px;
+}
+#inputTag {
+    display: none;
+}
+
 .advertise {
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 100px;
 
 }
 .advertise-title{
     display: flex;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: -100px;
 
 }
 .advertise-title i {
@@ -34,20 +153,26 @@ body{
 }
 .advertise-title h2 {
     font-size: 2rem;
-    padding-right: 30px;
+    padding-right: 120px;
     color: rgba(87, 36, 100, 0.926);
 
 }
 .advertise-content{
     display: flex;
     justify-content: space-between;
+    
+ 
+    
+    
+    
 
 
 }
 .advertise-content .advertise-card{
     background-color: rgb(82, 140, 189);
     width: 300px;
-    padding: 10px 0;
+    padding: 10px 0px;
+   
     border-radius: 10px;
     box-shadow: 0 0 4px #8c8a8a;
 }
@@ -64,6 +189,8 @@ body{
 .advertise-card .card-image img{
    
     width: 200px;
+    position: relative;
+    
 
 }
 .advertise-card .card-image span{
