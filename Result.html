@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>رزومه‌های ارسالی</title>
     <link rel="stylesheet" href="Result.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 <body>
     
@@ -51,6 +53,50 @@
                 <a href="#">جوایز و افتخارات</a> 
             </div> 
         </div>
+
+<!-- نمودار وضعیت رزومه‌ها -->
+        <div class="resume-chart">
+           <h3>وضعیت رزومه‌های ارسال‌شده توسط شما</h3>
+           <canvas id="resumeStatusChart" width="400" height="200"></canvas>
+        </div>
+        
+<script src="Result.js"></script>
+        <script>
+            // داده‌های نمودار وضعیت رزومه‌ها
+            var ctx = document.getElementById('resumeStatusChart').getContext('2d');
+            var resumeStatusChart = new Chart(ctx, {
+                type: 'bar', // نوع نمودار
+                data: {
+                    labels: ['ایرانسل', 'داتین', 'جنگل', 'مجتمع فنی تهران'], // نام شرکت‌ها
+                    datasets: [{
+                        label: 'وضعیت رزومه‌ها',
+                        data: [1, 1, 0, 1], // وضعیت ارسال‌ها: 1 برای پذیرفته شده، 0 برای رد شده
+                        backgroundColor: [
+                            'rgba(54, 162, 235, 0.2)', // رنگ ایرانسل
+                            'rgba(255, 159, 64, 0.2)', // رنگ داتین
+                            'rgba(255, 99, 132, 0.2)', // رنگ جنگل
+                            'rgba(75, 192, 192, 0.2)'  // رنگ مجتمع فنی تهران
+                        ],
+                        borderColor: [
+                            'rgba(54, 162, 235, 1)', // مرز رنگ ایرانسل
+                            'rgba(255, 159, 64, 1)', // مرز رنگ داتین
+                            'rgba(255, 99, 132, 1)', // مرز رنگ جنگل
+                            'rgba(75, 192, 192, 1)'  // مرز رنگ مجتمع فنی تهران
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 1
+                        }
+                    }
+                }
+            });
+        </script>
 </body>
+
 <script src="Result.js"></script>
 </html>
