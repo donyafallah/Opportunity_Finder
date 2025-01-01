@@ -44,13 +44,14 @@ header {
     font-size: 25px;
     margin: 120px auto;
     padding: 50px;
-    background-color: #e3f2fd;
+    background-color: #E1BEE7; 
     border: 1px solid #bbb;
     border-radius: 10px;
     max-width: 400px;
 }
 .tab-link {
     font-family: url(Shabnam-Bold.ttf);
+    border-radius: 15px;
     font-size: larger;
     background-color: #f1f1f1;
     border: none;
@@ -64,10 +65,64 @@ header {
 }
 
 .active {
-    /* استایل برای دکمه فعال */
-    background-color: #f263ff;
+    border-radius: 15px;
+    background-color: #8f6996;
     color: white;
 }
+
+.resume-status { 
+    margin-top: 20px;
+    font-family: url(Shabnam-Bold.ttf);
+    position: absolute; 
+    top: 180px; left: 20px; 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    border-radius: 10px; 
+    background-color: #F3E5F5; 
+    width: 230px; 
+    text-align: right;
+     /* اضافه کردن جهت متن */ } 
+    .completion-circle { 
+        display: flex; 
+        align-items: center; 
+        margin-bottom: 10px;
+     } 
+    .completion-circle span { 
+        margin-left: 10px; 
+    } 
+    .completion-circle .circle {
+         width: 50px; height: 50px; 
+         border-radius: 50%; 
+         display: flex; 
+         align-items: center; 
+         justify-content: center; 
+         font-size: 18px; 
+        } 
+    .circle.complete { 
+        background-color: #4caf50; 
+        color: white; } 
+    .circle.incomplete { 
+        background-color: #ccc; 
+        color: black; } 
+    .add-sections { 
+        margin-top: 20px; } 
+    .add-sections a { 
+        display: block; 
+        color: #007bff; 
+        text-decoration: none; 
+        margin-bottom: 5px; } 
+        /* طراحی ریسپانسیو برای دستگاه‌های کوچک */
+     @media screen and (max-width: 768px) { 
+        .nav-tabs { flex-direction: column; } 
+        .tab-content { font-size: 20px; } 
+        .tab-link { padding: 8px 16px; font-size: medium; }
+        .resume-status{position: static; width: 90%; margin: 10px auto; left: auto; top: auto;} }
+     @media screen and (max-width: 480px) { 
+        .tab-content { font-size: 18px; } 
+        .tab-link { padding: 6px 12px; font-size: small; } 
+        .resume-status { width: 90%; left: 5%; padding: 10px;}
+    }
+
 
 @media screen and (max-width: 768px) { 
     .nav-tabs { flex-direction: column;
