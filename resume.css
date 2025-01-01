@@ -32,7 +32,7 @@ nav {
     height: 95px;
     top: 0;
     left: 0;
-    z-index: 10; /* ensure the nav bar stays on top */
+    z-index: 10;
 }
 
 nav label {
@@ -43,10 +43,10 @@ nav label {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    position: absolute;  /* تغییر position به absolute */
-    top: 10px;  /* تنظیم فاصله از بالای صفحه */
-    right: 10px;  /* تنظیم فاصله از راست صفحه */
-    z-index: 10;  /* اطمینان از این که آیکون بالای سایر المان‌ها قرار گیرد */
+    position: absolute;  
+    top: 10px;  
+    right: 10px;  
+    z-index: 10;  
 }
 
 nav label span {
@@ -72,12 +72,12 @@ nav ul {
     height: 100vh;
     position: absolute;
     top: 0;
-    right: -250px; /* hide the menu off-screen initially */
+    right: -250px; 
     background-color: #FFD700;
     padding-top: 100px;
     transform: translateX(0);
     transition: 0.4s;
-    z-index: 1; /* keep the menu below the hamburger */
+    z-index: 1; 
 }
 
 nav ul li {
@@ -154,7 +154,7 @@ h1 {
     border-radius: 10px; 
     text-align: right;
     direction: rtl;
-    overflow: hidden; /* جلوگیری از خارج شدن محتوا */
+    overflow: hidden; 
     margin-top: 2%;
     width: 50%;
 }
@@ -164,10 +164,10 @@ h1 {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    object-fit: cover; /* جلوگیری از کشیده شدن یا فشرده شدن تصویر */
-    top: 20px; /* می‌توانید فاصله عمودی را تنظیم کنید */
-    left: 50%; /* قرار دادن تصویر در وسط افقی */
-    transform: translateX(-50%); /* جابجایی تصویر به میزان نصف عرض خودش تا دقیقاً وسط باشد */
+    object-fit: cover; 
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
     border: 2px solid rgba(87, 36, 100, 0.926);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
@@ -185,11 +185,11 @@ h1 {
 
 }
 .resume-content p {
-    margin-bottom: 15px; /* فاصله‌ی بین پاراگراف‌ها */
+    margin-bottom: 15px;
     line-height: 1.5; 
 }
 
-/* پس‌زمینه پیکسلی */
+
 .resume-template.pixel {
     background: repeating-linear-gradient(45deg, #8e44ad 25%, transparent 25%, transparent 50%, #8e44ad 50%, #8e44ad 75%, transparent 75%);
     background-size: 20px 20px;
@@ -222,7 +222,7 @@ h1 {
     }
 }
 
-/* پس‌زمینه آجر */
+
 .resume-template.brick {
     background: linear-gradient(90deg, #d35400 25%, transparent 25%, transparent 50%, #d35400 50%, #d35400 75%, transparent 75%), linear-gradient(#d35400 25%, transparent 25%, transparent 50%, #d35400 50%, #d35400 75%, transparent 75%);
     background-size: 40px 40px;

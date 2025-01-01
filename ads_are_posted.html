@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ads_are_posted.css">
+</head>
+<body>
+    <div id="header" class="fixed">
+        <div class="bell">
+          <img src="bell.svg" class="clickable-bell" onclick="toggleMessages()">
+        </div>
+      
+        <div class="profile_user">
+          <img src="employer5.jpg" alt="کلیک کنید" class="clickable-image">
+        </div>
+        
+        <div class="Profile_name">آریا فرهمند</div>
+      </div>
+    <nav>
+        <div id="sidebar" class="sidebar2">
+            <input type="checkbox" name="" id="inputTag">
+            <label for="inputTag">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </label>
+            <ul>
+              <br>
+              <li><a href="acount_employer.html">صفحه اصلی</a></li>
+              <br>
+              <li><a href="receive_resume.html">رزومه های دریافتی</a></li>
+              <br>
+              <li><a href="post_adv.html">ثبت آگهی</a></li>
+              <br>
+              <li><a href="ads_are_posted.html">آگهی های ثبت شده</a></li>
+              <br>
+              <li><a href="Poroject.html">خروج</a></li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>آگهی‌های ثبت‌شده شرکت داتین</h1>
+    
+   
+        <div class="job-card">
+            <h2>برنامه‌نویس فرانت‌اند</h2>
+            <p>ما به دنبال یک برنامه‌نویس خلاق برای طراحی و توسعه رابط‌های کاربری هستیم.</p>
+            <div class="details">
+                <span>مکان: تهران</span>
+                <button class="apply-button" onclick="toggleDetails(this)">مشاهده جزئیات</button>
+            </div>
+
+            <div class="job-details">
+                <p>شرح وظایف:</p>
+                <ul>
+                    <li>توسعه رابط‌های کاربری با HTML, CSS, JavaScript</li>
+                    <li>همکاری با تیم طراحی برای بهبود تجربه کاربری</li>
+                    <li>رفع باگ‌ها و بهینه‌سازی کد</li>
+                </ul>
+            </div>
+        </div>
+    
+     
+        <div class="job-card">
+            <h2>برنامه‌نویس بک‌اند</h2>
+            <p>اگر به توسعه سیستم‌های سمت سرور علاقه‌مندید، به ما بپیوندید.</p>
+            <div class="details">
+                <span>مکان: مشهد</span>
+                <button class="apply-button" onclick="toggleDetails(this)">مشاهده جزئیات</button>
+            </div>
+            <div class="job-details">
+                <p>شرح وظایف:</p>
+                <ul>
+                    <li>توسعه API‌های سمت سرور</li>
+                    <li>بهینه‌سازی پایگاه‌داده</li>
+                    <li>رفع اشکالات و ارتقای عملکرد سیستم</li>
+                </ul>
+            </div>
+        </div>
+    
+    
+        <div class="job-card">
+            <h2>تحلیل‌گر داده</h2>
+            <p>به دنبال افراد با استعداد برای تحلیل و پردازش داده‌های کلان هستیم.</p>
+            <div class="details">
+                <span>مکان: شیراز</span>
+                <button class="apply-button" onclick="toggleDetails(this)">مشاهده جزئیات</button>
+            </div>
+            <div class="job-details">
+                <p>شرح وظایف:</p>
+                <ul>
+                    <li>تحلیل و تفسیر داده‌ها</li>
+                    <li>تهیه گزارش‌های دقیق و جامع</li>
+                    <li>مدل‌سازی داده برای پیش‌بینی نتایج</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <script>
+function toggleDetails(button) {
+
+    const details = button.parentElement.nextElementSibling;
+
+    if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";  
+    } else {
+        details.style.display = "none"; 
+        button.innerText = "مشاهده جزئیات"; 
+    }
+}
+
+    </script>
+    
+</body>
+</html>
