@@ -255,3 +255,80 @@ h1 {
         margin-top: 5px;
     }
 }
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px; /* کمی فضای داخلی برای نمایش بهتر */
+    }
+
+    #header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .bell img {
+        margin-right: 0; /* دکمه زنگ وسط‌چین شود */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .profile_user img {
+        margin-right: 0;
+        margin-left: auto;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .Profile_name {
+        text-align: center;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .job-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .details {
+        flex-direction: column; /* چیدمان عمودی */
+        align-items: flex-start; /* راست‌چین شدن در حالت RTL */
+    }
+
+    .details span {
+        margin-top: 10px;
+        font-size: 12px; /* متن کوچکتر شود */
+    }
+
+    .apply-button {
+        width: 100%; /* دکمه تمام عرض */
+    }
+
+    nav ul {
+        width: 70px; /* پهنای منو کوچک‌تر شود */
+    }
+}
+
+@media (max-width: 480px) {
+    .job-card h2 {
+        font-size: 16px; /* عنوان‌ها کوچکتر شوند */
+    }
+
+    .job-card p {
+        font-size: 14px; /* توضیحات کوچکتر شوند */
+    }
+
+    .apply-button {
+        padding: 8px 10px; /* دکمه‌ها کوچک‌تر شوند */
+        font-size: 12px;
+    }
+
+    nav ul {
+        width: 100% /* منو تمام عرض موبایل شود */
+    }
+}
