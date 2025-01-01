@@ -280,7 +280,7 @@ nav ul li:hover {
 }
 .advertise-card .card-image span{
     position: absolute;
-    right: 15px;
+    right: 10px;
     font-size: 1.2rem;
     background: brown;
     padding: 5px 10px;
@@ -332,7 +332,7 @@ nav ul li:hover {
     display: flex;
     align-items: center;
     background: rgba(255, 0, 0, 0.2);
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 10px;
 
 }
@@ -345,11 +345,13 @@ nav ul li:hover {
     font-size: 1.2rem;
     padding-right: 5px;
     color: red;
+
    
 
 }
 .advertise-card .card-content .content-btn span{
     font-weight: bold;
+    
 
 }
 

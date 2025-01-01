@@ -4,48 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Project.css">
+    <link rel="stylesheet" href="sendresume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
     <script src="script.js" defer></script>
-
-
 </head>
 <body>
+ <div class ="drag-area">
+    <div class ="icon"><i class="fa fa-cloud-upload" aria-hidden="true"></i></div>
+    <header>Drag & Drop To Upload File</header>
+    <span>OR</span>
+    <button>Browse File</button>
+    <input type="file" hidden >
     
-    <div id="header" class="fixed">
-      <div class="button-container">
-        <a href="login.html"><button class="button_employer" >ورود</button></a>
-        <a href="enrolment.html"><button class="button_employee" >ثبت نام</button></a>        
-      </div>
-      <!-- <div class="bell">
-        <img src="bell.svg" >
-      </div>
-      <div class="profile_user">
-        <img src="user.jpg" >-->
-      </div> 
-      <!-- <div class="logo">
-        <img src="uni.PNG">
-      </div> -->
-      <!-- <div class="align">
-         <img src="align_justify.svg">
-      </div> -->
-     <div class="text-container">
-         <h1>از جستجو تا استخدام ، با یک کلیک!</h1>
-         <h2><span class="border-text">فرصت یاب</span></h2>
-         <h3>پلتفرمی برای جویندگان کار و کارفرمایان</h3>
-     </div>
-     <div class="searchbox">
-        <div class="searchleft">
-          <input type="text" placeholder="دنبال چه شغلی می گردید؟" class="search">
-        </div>
-        <div class="searchright"></div>
-     </div>
-     <div class="hexagon-container">
-       <div class="hexagon "></div>
-     </div>
-      <img src="3.jpg" alt="Profile Picture" class="img1">
-     <nav>
-      <div id="sidebar" class="sidebar2">
+ </div>
+ <nav>
+    <div id="sidebar" class="sidebar2">
         <input type="checkbox" name="" id="inputTag">
         <label for="inputTag">
           <span class="top"></span>
@@ -112,29 +86,24 @@
 
         </ul>
       </div>
-
-     </nav>
-  <script src="button.js"></script>
-
-
-  
-  <button class="chatbot1-toggler">
-    <span class="material-symbols-outlined">mode_comment</span> 
+</nav>
+<button class="chatbot1-toggler">
+    <span><P>چت با کارفرما</P></span> 
     <span class="material-symbols-outlined">close</span> 
   </button>
 <div class="chatbot1">
     <header>
-        <h2>پشتیبانی</h2>
+        <h2>چت با کارفرما</h2>
         <span class="material-symbols-outlined">close</span> 
     </header>
     <ul class="chatbox">
         <li class="chat incoming">
             <span class="material-symbols-outlined">smart_toy</span>
-            <p>سلام <br>چطور میتونم کمکتون کنم؟</p>
+            <p>سلام سارا سعادت عزیز <br>چطور میتونم کمکتون کنم؟</p>
 
         </li>
         <li class="chat outgoing">
-            <p>چجوری میتونم رزومه بسازم؟</p>
+            <p>سلام برای آگهی تون پیام میدم<br> آیا امکان کار به صورت پروژه ای ممکنه؟</p>
 
         </li>
         
@@ -145,9 +114,6 @@
     </div>
 </div>
 
-
+<script src="upload.js"></script>  
 </body>
-
-
-
 </html>

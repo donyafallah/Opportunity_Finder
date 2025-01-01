@@ -439,7 +439,7 @@ nav ul li:hover {
 }
 .chatbot1-toggler {
     position: fixed;
-    right: 1750px;
+    right: 1700px;
     bottom: 35px;
     height: 80px;
     width: 80px;
@@ -468,7 +468,7 @@ nav ul li:hover {
 }
 .chatbot1 {
     position: fixed;
-    right: 1350px;
+    right: 1250px;
     bottom: 100px;
     width: 420px;
     transform: scale(0.5);
