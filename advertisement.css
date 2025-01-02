@@ -525,4 +525,76 @@ nav ul li:hover {
 .chatbot1 header span {
     display: block;
 }
+/* حالت موبایل */
+@media (max-width: 768px) {
+    #header {
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        width: 100% ;
+        height: auto;
+    }
+
+    nav ul li {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .advertise-content {
+        flex-direction: column; /* کارت‌ها زیر هم قرار گیرند */
+        align-items: center;
+    }
+
+    .advertise-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .chatbot1 {
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .chatbot1 .chatbox {
+        height: 80%;
+    }
+
+    .chat-input {
+        flex-direction: column; /* ورودی و دکمه زیر هم قرار گیرند */
+        gap: 10px;
+    }
+
+    .chat-input textarea {
+        width: 100%;
+    }
+
+    .chat-input span {
+        align-self: center; /* دکمه ارسال در مرکز قرار گیرد */
+    }
+}
+
+/* حالت موبایل کوچک */
+@media (max-width: 480px) {
+    .Profile_name {
+        font-size: 1.2rem; /* کوچک‌تر شدن فونت نام */
+        margin-right: 2%;
+    }
+
+    nav ul li {
+        font-size: 0.9rem; /* کوچک‌تر شدن فونت منو */
+    }
+
+    .advertise-card {
+        width: 95%;
+    }
+
+    .chatbox .chat p {
+        font-size: 0.8rem; /* کوچک‌تر شدن متن پیام‌ها */
+    }
+}
 
