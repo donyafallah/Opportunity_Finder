@@ -547,6 +547,12 @@ h5{
             margin-top: 1%;
         }
     
+        .profile_user img,.Profile_name{
+            margin-right: 280px;
+        }
+        .bell img{
+            margin-right: 240px; 
+        }
         .button_employer, .button_employee {
             width: 55px;
             height: 30px;
