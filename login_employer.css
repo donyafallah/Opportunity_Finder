@@ -319,5 +319,84 @@ nav ul {
         align-items: flex-start;
     }
 }
+.home {
+    display: flex;
+    align-items: center;
+    height: 5px;
 
+}
+.home .size-6 {
+    width: 30px;
+    height: 30px;
+    color: rgba(87, 36, 100, 0.926);
+    margin-left: 0;
+    position: relative;
+    top: -15px;
+    right: 10px;
+
+}
+.resume {
+
+    display: flex;
+    align-items: center;
+    height: 5px;
+}
+.resume .size-6 {
+
+    width: 30px;
+    height: 30px;
+    color: rgba(87, 36, 100, 0.926);
+    margin-left: 0;
+    position: relative;
+    top: -12px;
+    right: 10px;
+
+}
+.ad {
+    display: flex;
+    align-items: center;
+    height: 5px;
+
+}
+.ad .size-6 {
+    width: 30px;
+    height: 30px;
+    color: rgba(87, 36, 100, 0.926);
+    margin-left: 0;
+    position: relative;
+    top: -12px;
+    right: 10px;
+
+}
+.result {
+    display: flex;
+    align-items: center;
+    height: 5px;
+
+}
+.result .size-6 {
+    width: 30px;
+    height: 30px;
+    color: rgba(87, 36, 100, 0.926);
+    margin-left: 0;
+    position: relative;
+    top: -12px;
+    right: 10px;
+
+}
+.exit {
+    display: flex;
+    align-items: center;
+    height: 5px;
+
+}
+.exit .size-6 {
+    width: 30px;
+    height: 30px;
+    color: rgba(87, 36, 100, 0.926);
+    margin-left: 0;
+    position: relative;
+    top: -12px;
+    right: 10px;
+}
 
