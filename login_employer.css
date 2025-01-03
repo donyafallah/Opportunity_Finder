@@ -239,32 +239,6 @@ h4{
 }
 
 
-@media screen and (max-width:576px) {
-        .buttonsbox{
-            width: 200px;
-            height: 60px;
-            display: flex;
-            gap: 10px;
-            margin: 10px ;
-            margin-right: 55%;
-            padding-bottom: 10px;
-        }
-        
-        label{
-            color: white;
-            margin-bottom: 10px;
-        }
-        .login{
-            display:block;
-          
-        }
-       
-        .information{
-            width: 510px;
-            height: 650px;
-            margin: auto;
-        }   
-}
 /* Base Styles */
 body, html {
     margin: 0;
@@ -309,17 +283,13 @@ nav ul {
     right: 0;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .emailbox, .usernamebox, .passwordbox, .form-group, .buttonsbox {
         width: 100%;
         flex-direction: column;
         gap: 15px;
         margin: 10px auto;
     }
-}
-
-@media screen and (max-width: 576px) {
     .buttonsbox {
         width: 100%;
         flex-direction: column;
@@ -329,9 +299,10 @@ nav ul {
     
     .information {
         margin-top: 70px;
-        width: 100%;
+        width: 70%;
         height: auto;
         padding: 20px;
+        
     }
 
     .login {
@@ -339,7 +310,7 @@ nav ul {
     }
 
     label {
-        color: white;
+        color: black;
     }
 
     .form-group, .emailbox, .usernamebox, .passwordbox {
@@ -348,3 +319,5 @@ nav ul {
         align-items: flex-start;
     }
 }
+
+
