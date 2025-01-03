@@ -584,6 +584,12 @@ nav ul li:hover {
         font-size: 1.2rem; /* کوچک‌تر شدن فونت نام */
         margin-right: 2%;
     }
+    .top,middle,botton{
+        margin-top: 50px;
+    }
+    .Profile_name{
+        margin-right: 70px;
+    }
 
     nav ul li {
         font-size: 0.9rem; /* کوچک‌تر شدن فونت منو */

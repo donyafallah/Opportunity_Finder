@@ -328,6 +328,7 @@ nav ul {
     }
     
     .information {
+        margin-top: 70px;
         width: 100%;
         height: auto;
         padding: 20px;
@@ -342,6 +343,7 @@ nav ul {
     }
 
     .form-group, .emailbox, .usernamebox, .passwordbox {
+        margin-top: 30px;
         flex-direction: column;
         align-items: flex-start;
     }
