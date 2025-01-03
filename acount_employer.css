@@ -469,10 +469,6 @@ h5{
     border-radius: 20%;
 
 }
-
-
-
-
  @media screen and (max-width: 576px) {
     body {
         background-color: rgb(223, 223, 236);
@@ -532,4 +528,67 @@ h5{
     /* #inputTag:checked ~ ul {
         transform: translateX(0);
     } */
-
+    @media screen and (max-width: 576px) {
+    
+        body {
+            background-color: rgb(223, 223, 236);
+        }
+        #header {
+            height: 75px;
+            background-color: #7f7fa6;
+        }
+    
+        .button-container {
+            display: flex;
+            justify-content: flex-start;
+            padding: 10px;
+            gap: 1px;
+            width: 100%;
+            margin-top: 1%;
+        }
+    
+        .button_employer, .button_employee {
+            width: 55px;
+            height: 30px;
+            padding: 7px 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            font-size: small;
+        }
+        button.button_employer:hover, button.button_employee:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+        button.button_employer:active, button.button_employee:active {
+            transform: scale(0.95);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        #inputTag {
+            display: none;
+        }
+        .companynamebox, .emailbox, .phonebox, .logobox, .passwordbox {
+            flex-direction: column;
+            width: 100%;
+            margin-right: 0;
+        }
+    
+        .company_label, .email_label, .phone_label, .logo_label, .password_label {
+            margin-right: 0;
+        }
+    
+        .avatar {
+            width: 150px;
+            height: 150px;
+        }
+        .text1, .text2, .text3, .text4 {
+            gap: 35px;
+            margin-top: 2%;
+        }
+        nav ul {
+            width: 80%;
+            padding-top: 80px;
+        }
+    }
