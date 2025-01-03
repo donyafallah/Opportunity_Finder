@@ -339,9 +339,10 @@ nav ul {
     right: 0;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
+   
     .namebox, .familybox, .emailbox, .Phonebox, .provincebox, .citybox, .genderbox, .usernamebox, .passwordbox {
+      
         width: 100%;
         flex-direction: column;
         gap: 15px;
@@ -350,7 +351,7 @@ nav ul {
 }
 
 @media screen and (max-width: 576px) {
-    .buttonsbox {
+    .buttonsbox { 
         width: 100%;
         flex-direction: column;
         margin-right: 0;
@@ -358,6 +359,7 @@ nav ul {
     }
     
     .information {
+        margin-top: 70px;
         width: 100%;
         height: auto;
         padding: 20px;
