@@ -415,73 +415,73 @@ nav ul li:hover {
         display: none;
     }
     .search {
-        width: 250px; /* کاهش عرض */
-        height: 40px; /* کاهش ارتفاع */
-        transform: translateX(15%); /* تغییر مقدار ترجمه */
-        font-size: 16px; /* کاهش اندازه فونت */
+        width: 250px; 
+        height: 40px; 
+        transform: translateX(15%); 
+        font-size: 16px; 
         
-        right: 10%; /* تغییر موقعیت افقی */
+        right: 10%; 
         margin-top:-20.5% ;
         margin-right: 26%;
       }
     
       .hexagon-container {
-        width: 90%; /* کاهش عرض کانتینر */
-        height: auto; /* ارتفاع خودکار برای تطبیق با محتوا */
-        top: auto; /* حذف موقعیت‌دهی ثابت */
-        left: 5%; /* قرار دادن کانتینر در وسط */
-        transform: none; /* حذف ترجمه */
-        overflow: visible; /* اجازه نمایش کامل محتوا */
+        width: 90%; 
+        height: auto; 
+        top: auto; 
+        left: 5%; 
+        transform: none;
+        overflow: visible; 
       }
     
       .hexagon {
-        width: 80%; /* کاهش عرض شش‌ضلعی */
-        height: auto; /* ارتفاع خودکار برای حفظ تناسب */
-        margin: 20px auto; /* فاصله از بالا و پایین و وسط‌چینی افقی */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* کاهش سایه */
+        width: 80%; 
+        height: auto; 
+        margin: 20px auto; 
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
       }
       .img1 {
-        width: 65%; /* تنظیم عرض به نسبت نمایشگر */
-        height: auto; /* ارتفاع خودکار برای حفظ تناسب */
-        top: 45%; /* حذف موقعیت‌دهی ثابت */
+        width: 65%; 
+        height: auto; 
+        top: 45%; 
         margin-left: 13%;
-        transform: none; /* حذف ترجمه */
+        transform: none; 
       }
       .text-container {
-        width: 90%; /* کاهش عرض */
-        height: auto; /* تنظیم ارتفاع */
-        position: static; /* حذف موقعیت‌دهی ثابت */
-        transform: none; /* حذف ترجمه */
-        white-space: normal; /* شکست خطوط متن */
-        margin: 0 auto; /* وسط‌چینی */
+        width: 90%; 
+        height: auto; 
+        position: static; 
+        transform: none; 
+        white-space: normal; 
+        margin: 0 auto; 
         margin-top: 10%;
       }
     
       h1 {
-        font-size: 30px; /* کاهش اندازه فونت */
-        top: auto; /* حذف موقعیت ثابت */
-        right: auto; /* حذف موقعیت ثابت */
-        text-align: center; /* مرکز کردن متن */
+        font-size: 30px; 
+        top: auto; 
+        right: auto; 
+        text-align: center; 
         white-space: nowrap;
       }
     
       h2 {
-        font-size: 38px; /* کاهش اندازه فونت */
-        transform: none; /* حذف ترجمه */
-        top: auto; /* حذف موقعیت ثابت */
+        font-size: 38px; 
+        transform: none; 
+        top: auto; 
         margin-right: -25%;
         
       }
     
       h3 {
-        font-size: 22px; /* کاهش اندازه فونت */
-        top: auto; /* حذف موقعیت ثابت */
+        font-size: 22px;
+        top: auto; 
         margin-right: 7%;
       }
     
       .border-text {
-        padding: 5px; /* کاهش فضای داخلی */
-        border-radius: 40px; /* کاهش شعاع گوشه‌ها */
+        padding: 5px; 
+        border-radius: 40px;
       }
       nav  ul {
         width: 30%;
@@ -490,11 +490,11 @@ nav ul li:hover {
         margin-top: -50%;
       }
       .searchright {
-        width: 80px; /* کاهش عرض */
-        height: 40px; /* کاهش ارتفاع */
-        top: auto; /* حذف موقعیت ثابت */
-        right: 5%; /* تنظیم موقعیت */
-        transform: none; /* حذف ترجمه */
+        width: 80px; 
+        height: 40px; 
+        top: auto; 
+        right: 5%; 
+        transform: none; 
         margin-top: 10%;
         margin-right: 10%;
       }

@@ -12,7 +12,7 @@
     src: url(Shabnam-Bold.ttf);
 }
 body{
-   /* background-color: rgb(223, 223, 236);*/
+  
     overflow-x: hidden;
     background-color: #cef7f7;
 
@@ -28,7 +28,7 @@ body{
     height: 95px;
     position: relative;
     z-index: 1;
-   /* background-color: #7f7fa6;*/
+   
 
 }
 
@@ -59,27 +59,11 @@ body{
 }
 
 
-/* .align img{
-    
-    width: 50px;
-    height: 50px;
-    margin-right: 120px;
-    margin-top: -150px;
-    margin-bottom: 50px;
-    cursor: pointer;
-    z-index: 1000;
 
-
-} */
 #wrap {
     display: flex;
     gap: 25px;
 }
-/*.content2 {
-    width: 500px;
-    height: 500px;
-    background-color: blueviolet;
-}*/
 
 #inputTag {
     display: none;
@@ -104,7 +88,7 @@ nav label {
     align-items: center;
     margin-right: 20px;
     cursor: pointer;
-    position: relative;
+    position:absolute;
     z-index: 3;
     margin-top: -100px;
     
@@ -128,7 +112,7 @@ nav label span.bottom {
 }
 
 nav  ul {
-    width: 190px;
+    width: 10%;
     height: 100vh;
     position: absolute;
     top: 0;
@@ -174,12 +158,13 @@ nav ul li:hover {
 
 }
 
+
 .clickable-image{
     cursor: pointer;
         transition: transform 0.2s;
 }
 .clickable-image:hover {
-    transform: scale(1.05); /* جلوه بزرگ شدن هنگام هاور */
+    transform: scale(1.05); 
 }
 
 .clickable-bell { 
@@ -193,7 +178,7 @@ nav ul li:hover {
   
 
   .bell:hover + #messages {
-    display: block; /* نمایش پیام‌ها زمانی که موس روی آیکون است */
+    display: block;
   }
  .messages{
     margin-left: 10px;
@@ -209,32 +194,32 @@ nav ul li:hover {
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    position: relative;  /* اضافه کردن position relative */
-    z-index: 2;  /* آیکون همبرگر بالاتر از سایر المان‌ها */
+    position: relative;  
+    z-index: 2; 
     width:23%;
     height: 25%;
   }
 
   .message:hover {
-    transform: scale(1.02); /* انیمیشن نمایش هنگام هاور */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* سایه بیشتر در هنگام هاور */
+    transform: scale(1.02); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
   }
   
   .icon {
     font-size: 20px;
     margin-right: 15px;
-    color: #4CAF50; /* رنگ سبز برای آیکون */
+    color: #4CAF50; 
   }
   
   p {
     margin: 0;
-    color: #333; /* رنگ متن پیام */
+    color: #333;
     font-size: 14px;
     line-height: 1.6;
   }
   
 #content {
-    display: none; /* فرم پنهان */
+    display: none; 
     margin: auto ;
     padding: 20px;
     border-radius: 5px;
@@ -248,11 +233,12 @@ nav ul li:hover {
 }
 .container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center; /* برای چینش افقی وسط */
-    align-items: center; /* برای چینش عمودی وسط */
-    gap: 30px; /* فاصله بین باکس‌ها */
-    height: 60vh; /* تنظیم ارتفاع صفحه */
+    justify-content: center; 
+    align-items: center;
+    gap: 30px; 
+    height: 60vh; 
     padding: 30px;
 }
 #username{
@@ -408,7 +394,7 @@ button:hover {
 }
 .myform {
     display: none;
-    /* سایر استایل‌های دلخواه */
+
   }
 h5{
     margin-top: -1%;
@@ -421,9 +407,7 @@ h5{
 
 }
 
-/* استایل دکمه ارسال 
 
-*/
 .submit-button {
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -434,7 +418,7 @@ h5{
 }
 
 .submit-button:hover {
-    background-color: #45a049; /* تغییر رنگ هنگام هاور */
+    background-color: #45a049;
 }
 
 
@@ -442,7 +426,15 @@ h5{
     body {
         background-color: rgb(223, 223, 236);
     }
+     h1{
 
+        font-size: large;
+        margin-top: 45px;
+     }
+    h4{
+        font-size: large;
+        margin-top: 5px;
+    }
     #header {
         padding: 1%;
         margin: 0;
@@ -474,7 +466,15 @@ h5{
         font-size: small ;
         
     }
-
+    .profilebox, .seting {
+        border: 2px solid rgba(87, 36, 100, 0.926);
+        background-color: #fce562;
+        padding: 20px;
+        border-radius: 5px;
+        width: 500px;
+        height: 350px;
+    }
+    
     button.button_employer:hover , button.button_employee:hover {
         background-color: #45a049;
         transform: scale(1.05);
@@ -576,19 +576,40 @@ h5{
  
  
  
-    /* #inputTag:checked ~ ul {
-        transform: translateX(0);
-    } */
-
+ 
     
     @media screen and (max-width: 576px) {
 
         body {
-            background-color: rgb(223, 223, 236);
+            background-color: #cef7f7;
         }
         #header {
             height: 75px;
-            background-color: #7f7fa6;
+            background-color: #f6d82b;
+        }
+        .bell img{
+            width: 35px;
+            height: 35px;
+            margin-right: 92%;
+            margin-top: 10px;
+            padding-bottom: -10px;
+            z-index: 10;
+        }
+        .profile_user img{
+            width: 65px;
+            height: 65px;
+            border-radius: 100%;
+            border: 2px solid rgba(18, 18, 30, 0.526);
+            margin-right: 79%;
+            margin-top: -90px ;
+        }
+        .Profile_name{
+        
+            width: 15px;
+            height: 5px;
+            margin-right: 65%;
+            margin-top: -8.8% ;
+            white-space: nowrap;
         }
 
         .button-container {
@@ -622,22 +643,6 @@ h5{
         #inputTag {
             display: none;
         }
-        .companynamebox, .emailbox, .phonebox, .logobox, .passwordbox {
-            flex-direction: column;
-            width: 100%;
-            margin-right: 0;
-        }
-        
-        .profile_user img,.Profile_name{
-            margin-right: 280px;
-        }
-        .bell img{
-            margin-right: 240px;  
-        }
-
-        .company_label, .email_label, .phone_label, .logo_label, .password_label {
-            margin-right: 0;
-        }
 
         .avatar {
             width: 150px;
@@ -647,8 +652,23 @@ h5{
             gap: 35px;
             margin-top: 2%;
         }
+        .message {
+            background-color: #f1f1f1;
+            padding: 15px;
+            margin-top: 10px;
+            margin-right: 55%;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            position: relative;  
+            z-index: 2; 
+            width:45%;
+            height: 25%;
+          }
         nav ul {
-            width: 80%;
+            width: 30%;
             padding-top: 80px;
         }
     }
