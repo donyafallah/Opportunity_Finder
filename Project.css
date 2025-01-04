@@ -180,27 +180,6 @@ a {
 
 
 
-.profile_user img{
-    width: 75px;
-    height: 75px;
-    border-radius: 100%;
-    object-fit: contain;
-    margin-right: 91%;
-    margin-top: -90px ;
-    position: relative;
-}
-.logo img{
-    width: 100px;
-    height: 100px;
-    margin-right: -1px;
-    margin-top: -130px;
-    padding-bottom: 15px;
-    padding-top: -2px;
-    border-top-right-radius: 5%;
-    border-top-left-radius:5%; 
-    border-bottom-right-radius:15% ; 
-    border-bottom-left-radius: 15%;
-}
 
 #wrap {
     display: flex;
@@ -386,7 +365,7 @@ nav ul li:hover {
 
  @media screen and (max-width: 576px) {
     body {
-        background-color: rgb(223, 223, 236);
+        background-color: #cef7f7;
     }
 
     #header {
@@ -394,7 +373,7 @@ nav ul li:hover {
         margin: 0;
         width: 100%;
         height: 75px;
-        background-color: #7f7fa6;
+        background-color: #FFD700;
     }
 
     .button-container {
@@ -435,6 +414,90 @@ nav ul li:hover {
     #inputTag {
         display: none;
     }
+    .search {
+        width: 250px; /* کاهش عرض */
+        height: 40px; /* کاهش ارتفاع */
+        transform: translateX(15%); /* تغییر مقدار ترجمه */
+        font-size: 16px; /* کاهش اندازه فونت */
+        
+        right: 10%; /* تغییر موقعیت افقی */
+        margin-top:-20.5% ;
+        margin-right: 26%;
+      }
+    
+      .hexagon-container {
+        width: 90%; /* کاهش عرض کانتینر */
+        height: auto; /* ارتفاع خودکار برای تطبیق با محتوا */
+        top: auto; /* حذف موقعیت‌دهی ثابت */
+        left: 5%; /* قرار دادن کانتینر در وسط */
+        transform: none; /* حذف ترجمه */
+        overflow: visible; /* اجازه نمایش کامل محتوا */
+      }
+    
+      .hexagon {
+        width: 80%; /* کاهش عرض شش‌ضلعی */
+        height: auto; /* ارتفاع خودکار برای حفظ تناسب */
+        margin: 20px auto; /* فاصله از بالا و پایین و وسط‌چینی افقی */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* کاهش سایه */
+      }
+      .img1 {
+        width: 65%; /* تنظیم عرض به نسبت نمایشگر */
+        height: auto; /* ارتفاع خودکار برای حفظ تناسب */
+        top: 45%; /* حذف موقعیت‌دهی ثابت */
+        margin-left: 13%;
+        transform: none; /* حذف ترجمه */
+      }
+      .text-container {
+        width: 90%; /* کاهش عرض */
+        height: auto; /* تنظیم ارتفاع */
+        position: static; /* حذف موقعیت‌دهی ثابت */
+        transform: none; /* حذف ترجمه */
+        white-space: normal; /* شکست خطوط متن */
+        margin: 0 auto; /* وسط‌چینی */
+        margin-top: 10%;
+      }
+    
+      h1 {
+        font-size: 30px; /* کاهش اندازه فونت */
+        top: auto; /* حذف موقعیت ثابت */
+        right: auto; /* حذف موقعیت ثابت */
+        text-align: center; /* مرکز کردن متن */
+        white-space: nowrap;
+      }
+    
+      h2 {
+        font-size: 38px; /* کاهش اندازه فونت */
+        transform: none; /* حذف ترجمه */
+        top: auto; /* حذف موقعیت ثابت */
+        margin-right: -25%;
+        
+      }
+    
+      h3 {
+        font-size: 22px; /* کاهش اندازه فونت */
+        top: auto; /* حذف موقعیت ثابت */
+        margin-right: 7%;
+      }
+    
+      .border-text {
+        padding: 5px; /* کاهش فضای داخلی */
+        border-radius: 40px; /* کاهش شعاع گوشه‌ها */
+      }
+      nav  ul {
+        width: 30%;
+      }
+      nav label{
+        margin-top: -50%;
+      }
+      .searchright {
+        width: 80px; /* کاهش عرض */
+        height: 40px; /* کاهش ارتفاع */
+        top: auto; /* حذف موقعیت ثابت */
+        right: 5%; /* تنظیم موقعیت */
+        transform: none; /* حذف ترجمه */
+        margin-top: 10%;
+        margin-right: 10%;
+      }
 
 }
 .chatbot1-toggler {

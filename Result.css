@@ -164,6 +164,30 @@ header {
         padding: 8px 16px;
          font-size: medium; 
         } }
+        .chart-container {
+            width: 40%; 
+            max-width: 300px; 
+            margin: 0 auto; 
+            padding: 20px;
+            background-color: #f5f5f5; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        }
+        .resume-status { width: 50%;
+        margin-bottom: 20%;}
+        canvas {
+            margin: 0 auto; 
+            width: 60% !important; 
+            height: 400px !important; 
+            margin-bottom: 5%;
+            border: 2px solid rgba(87, 36, 100, 0.926);
+            padding-left: 2%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-right: 2%;
+            border-radius: 2%;
+        }
+        
  @media screen and (max-width: 480px) {
      .tab-content { 
         font-size: 18px; 

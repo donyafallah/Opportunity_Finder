@@ -241,47 +241,43 @@ h1 {
     margin-bottom: 5px;
 }
 
-@media (max-width: 768px) {
-    .job-card {
-        flex-direction: column;
-    }
 
-    .job-card .details {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .job-card .details span {
-        margin-top: 5px;
-    }
-}
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     body {
         padding: 0 10px; 
     }
-
-    #header {
-        height: auto;
-        padding: 10px;
+    nav  ul{
+        width: 30%;
     }
-
-    .bell img {
-        margin-right: 240px;
-    }
-
-    .profile_user img {
-        margin-right: 280px;
-    }
-
-    .Profile_name {
-        text-align: center;
-        margin-right: 275px;
+    #header{ width: 100%;}
+    .bell img{
+        width: 35px;
+        height: 35px;
+        margin-right: 95%;
         margin-top: 10px;
+        padding-bottom: -10px;
+        z-index: 10;
+    }
+    .profile_user img{
+        width: 65px;
+        height: 65px;
+        border-radius: 100%;
+        border: 2px solid rgba(18, 18, 30, 0.526);
+        margin-right: 80%;
+        margin-top: -90px ;
+    }
+    .Profile_name{
+    
+        width: 15px;
+        height: 5px;
+        margin-right: 65%;
+        margin-top: -8.8% ;
+        white-space: nowrap;
     }
 
     .container {
         padding: 10px;
-        margin: 10px;
+        margin: 20px;
     }
 
     .job-card {
@@ -303,26 +299,18 @@ h1 {
         width: 100%; /* دکمه تمام عرض */
     }
 
-    nav ul {
-        width: 70px; /* پهنای منو کوچک‌تر شود */
+    .job-card {
+        flex-direction: column;
+    }
+
+    .job-card .details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .job-card .details span {
+        margin-top: 5px;
     }
 }
 
-@media (max-width: 480px) {
-    .job-card h2 {
-        font-size: 16px; /* عنوان‌ها کوچکتر شوند */
-    }
 
-    .job-card p {
-        font-size: 14px; /* توضیحات کوچکتر شوند */
-    }
-
-    .apply-button {
-        padding: 8px 10px; /* دکمه‌ها کوچک‌تر شوند */
-        font-size: 12px;
-    }
-
-    nav ul {
-        width: 100% /* منو تمام عرض موبایل شود */
-    }
-}
