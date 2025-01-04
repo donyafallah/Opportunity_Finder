@@ -243,9 +243,7 @@ h1 {
 
 
 @media (max-width: 576px) {
-    body {
-        padding: 0 10px; 
-    }
+  
     nav  ul{
         width: 30%;
     }

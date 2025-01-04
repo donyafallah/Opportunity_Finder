@@ -240,31 +240,39 @@ nav ul li:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* سایه بیشتر در هنگام هاور */
   }
   @media (max-width: 768px) {
-    #header {
-        height: 70px;
-        padding: 10px;
-    }
+    
 
-    .bell img {
-        width: 25px;
-        height: 25px;
-        margin-right: 85%;
+    nav  ul{
+        width: 30%;
     }
-
-    .profile_user img {
-        width: 50px;
-        height: 50px;
-        margin-right: 75%;
+    #header{ width: 100%;}
+    .bell img{
+        width: 35px;
+        height: 35px;
+        margin-right: 95%;
+        margin-top: 10px;
+        padding-bottom: -10px;
+        z-index: 10;
     }
-
-    .Profile_name {
-        font-size: 12px;
-        margin-right: 70%;
+    .profile_user img{
+        width: 65px;
+        height: 65px;
+        border-radius: 100%;
+        border: 2px solid rgba(18, 18, 30, 0.526);
+        margin-right: 80%;
+        margin-top: -90px ;
     }
-
+    .Profile_name{
+    
+        width: 15px;
+        height: 5px;
+        margin-right: 65%;
+        margin-top: -8.8% ;
+        white-space: nowrap;
+    }
     nav ul {
-        width: 80%;
-        height: auto;
+        width: 30%;
+  
     }
 
     nav ul li {
@@ -273,7 +281,7 @@ nav ul li:hover {
     }
 
     .table-container {
-        width: 100%;
+        width: 80%;
         padding: 10px;
         margin-top: 5%;
         max-height: 300px;
